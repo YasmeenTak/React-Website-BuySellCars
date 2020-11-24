@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgDiv {
+  width: 590px;
+  height: 400px;
+  margin-top: 130px;
+}
+.formDiv {
+  width: 450px;
+  height: 450px;
+  margin-top: 80px;
+}
+
+.loginImg {
+  width: 590px;
+  height: 380px;
+}
+
+input {
+  background-color: #eceef0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 380px;
+  margin-right: 50px;
+  height: 40px;
+}
+
+label {
+  float: right;
+}
+.forgetPass {
+  font-size: small;
+  margin-top: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.loginBtn {
+  width: 180px;
+}
+
+.loginBtnAndReg {
+  margin: auto;
+}
+
+.makeAccount {
+  text-align: center;
+  font-size: small;
+  margin-top: 10px;
+}

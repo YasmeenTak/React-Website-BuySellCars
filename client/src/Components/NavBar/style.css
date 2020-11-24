@@ -1,0 +1,24 @@
+.navbar {
+  height: 120%;
+}
+
+.logoImg {
+  width: 150px;
+  height: 30px;
+  margin-right: 65px;
+}
+
+.mr-auto {
+  margin-left: 100px;
+}
+
+.btnNav {
+  margin-left: 70px;
+}
+
+.singInBtn {
+  width: 120px;
+}
+.loginBtn {
+  background-color: colorhere;
+}

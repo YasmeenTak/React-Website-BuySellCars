@@ -25,8 +25,11 @@ input {
   border-radius: 5px;
   padding: 5px;
   width: 380px;
-  margin-right: 50px;
   height: 40px;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 50px #eceef0 inset; /* Change the bg color when it filled  */
 }
 
 label {
@@ -54,4 +57,12 @@ label {
   text-align: center;
   font-size: small;
   margin-top: 10px;
+}
+
+.subTitle {
+  color: #818181;
+}
+
+.title {
+  margin-bottom: 20px;
 }

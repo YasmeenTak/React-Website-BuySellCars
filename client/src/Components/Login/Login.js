@@ -12,8 +12,10 @@ export class Login extends Component {
             <img src='/assets/img/login.png' className='loginImg'></img>
           </div>
           <div className='formDiv'>
-            <h5>تسجيل الدخول</h5>
-            <p>قم بإدخال البريد الإلكتروني وكلمة المرور للوصول</p>
+            <h5 className='title'>تسجيل الدخول</h5>
+            <p className='subTitle'>
+              قم بإدخال البريد الإلكتروني وكلمة المرور للوصول
+            </p>
 
             <form className='form-container'>
               <label for='email'>البريد الإلكتروني</label>
@@ -41,6 +43,7 @@ export class Login extends Component {
                   background: '#ff6c37',
                   border: '1px solid #ff6c37',
                   borderRadius: '12px',
+                  // outline: '#818181',
                 }}
               >
                 تسجيل الدخول

@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
-import { Row, Col, Footer } from 'react-bootstrap';
-import Carousel from 'react-elastic-carousel';
+//import { Row, Col, Footer } from 'react-bootstrap';
+//import Carousel from 'react-elastic-carousel';
+// import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+// import '@brainhubeu/react-carousel/lib/style.css';
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 import './style.css';
+import Head from '../Head/Head';
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 export class home extends Component {
   render() {
-    const breakPoints = [
-      { width: 500, itemToShow: 1 },
-      { width: 768, itemToShow: 2 },
-      { width: 1200, itemToShow: 3 },
-      { width: 1500, itemToShow: 4 },
-    ];
     return (
       <div>
-        <section className='header'>
+        {/* <section className='header'>
           <Row>
             <Row class='parent'>
               <img src='assets/img/header1.png' className='headRight' />
@@ -41,7 +62,9 @@ export class home extends Component {
               </div>
             </Col>
           </Row>
-        </section>
+        </section> */}
+
+        <Head />
         {/* ----------------------------------- Section2 ---------------------------------------- */}
         <div>
           <section>
@@ -56,31 +79,69 @@ export class home extends Component {
               الموصفات العالية
             </p>
             {/* ----------------------------------------------- slider start ------------------------------------------ */}
-            <div id='slider'>
-              <Carousel breakPoints={breakPoints}>
-                <img src='/assets/img/logo.png'></img>
-                <img src='/assets/img/logo.png'></img>
-                {/* <img src='/assets/img/car1.png' />
+            {/* <div id='slider'>
+              <Carousel
+                plugins={[
+                  'infinite',
+                  'arrows',
+                  {
+                    resolve: slidesToShowPlugin,
+                    options: {
+                      numberOfSlides: 3,
+                    },
+                  },
+                ]}
+              >
                 <img src='/assets/img/car 2.png' />
-                <img src='/assets/img/car 4.png' />
-                <img src='/assets/img/car1.png' />
-                <img src='/assets/img/car1.png' />
                 <img src='/assets/img/car1.png' />
                 <img src='/assets/img/car 4.png' />
-                <img src='/assets/img/car 4.png' />
-                <img src='/assets/img/car1.png' /> */}
               </Carousel>
-            </div>
+            </div> */}
+            <Carousel responsive={responsive} className='carouselSlider'>
+              <img
+                src='/assets/img/car 2.png'
+                alt='car'
+                className='imgSlider'
+              />
+              <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+              <img
+                src='/assets/img/car 4.png'
+                alt='car'
+                className='imgSlider'
+              />
+              <img
+                src='/assets/img/car 2.png'
+                alt='car'
+                className='imgSlider'
+              />
+              <img
+                src='/assets/img/car 2.png'
+                alt='car'
+                className='imgSlider'
+              />
+              <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+              <img
+                src='/assets/img/car 4.png'
+                alt='car'
+                className='imgSlider'
+              />
+              <img
+                src='/assets/img/car 2.png'
+                alt='car'
+                className='imgSlider'
+              />
+            </Carousel>
+
             {/* ----------------------------------------------- slider end ------------------------------------------ */}
           </section>
         </div>
         {/* --------------------------------------- Footer Start ------------------------------------- */}
 
         <footer id='footer'>
-          <div class='footer-top'>
-            <div class='container'>
-              <div class='row'>
-                <div class='col-lg-3 col-md-6 footer-info'>
+          <div className='footer-top'>
+            <div className='container'>
+              <div className='row'>
+                <div className='col-lg-3 col-md-6 footer-info'>
                   <h4>NJ Cash Cars</h4>
                   <p>
                     Get cash for your used car in New Jersey. We pay the highest
@@ -89,69 +150,71 @@ export class home extends Component {
                   </p>
                 </div>
 
-                <div class='col-lg-3 col-md-6 footer-links'>
+                <div className='col-lg-3 col-md-6 footer-links'>
                   <h4>Useful Links</h4>
                   <ul>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>Home</a>
+                      <i className='fa fa-angle-right'></i> <a href='#s'>Home</a>
                     </li>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>About us</a>
+                      <i className='fa fa-angle-right'></i>{' '}
+                      <a href='#'>About us</a>
                     </li>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>Blogs</a>
+                      <i className='fa fa-angle-right'></i>{' '}
+                      <a href='#'>Blogs</a>
                     </li>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>FQAs</a>
+                      <i className='fa fa-angle-right'></i> <a href='#'>FQAs</a>
                     </li>
                   </ul>
                 </div>
 
-                <div class='col-lg-3 col-md-6 footer-links'>
+                <div className='col-lg-3 col-md-6 footer-links'>
                   <h4>Useful Links</h4>
                   <ul>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>Home</a>
+                      <i className='fa fa-angle-right'></i> <a href='#'>Home</a>
                     </li>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>About us</a>
+                      <i className='fa fa-angle-right'></i>{' '}
+                      <a href='#'>About us</a>
                     </li>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>Blogs</a>
+                      <i className='fa fa-angle-right'></i>{' '}
+                      <a href='#'>Blogs</a>
                     </li>
                     <li>
-                      <i class='fa fa-angle-right'></i> <a href='#'>FQAs</a>
+                      <i className='fa fa-angle-right'></i> <a href='#'>FQAs</a>
                     </li>
                   </ul>
                 </div>
 
-                <div class='col-lg-3 col-md-6 footer-contact'>
+                <div className='col-lg-3 col-md-6 footer-contact'>
                   <h4>Contact Us</h4>
                   <p>Call Now : +1(908) 688-4059</p>
 
-                  <div class='social-links'>
-                    <a href='#' class='twitter'>
-                      <i class='fa fa-twitter'></i>
+                  <div className='social-links'>
+                    <a href='#' className='twitter'>
+                      <i className='fa fa-twitter'></i>
                     </a>
-                    <a href='#' class='facebook'>
-                      <i class='fa fa-facebook'></i>
+                    <a href='#' className='facebook'>
+                      <i className='fa fa-facebook'></i>
                     </a>
-                    <a href='#' class='instagram'>
-                      <i class='fa fa-instagram'></i>
+                    <a href='#' className='instagram'>
+                      <i className='fa fa-instagram'></i>
                     </a>
-                    <a href='#' class='google-plus'>
-                      <i class='fa fa-google-plus'></i>
+                    <a href='#' className='google-plus'>
+                      <i className='fa fa-google-plus'></i>
                     </a>
-                    <a href='#' class='linkedin'>
-                      <i class='fa fa-linkedin'></i>
+                    <a href='#' className='linkedin'>
+                      <i className='fa fa-linkedin'></i>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-       
         </footer>
         {/* ---------------------------------------- Footer End ------------------------------------- */}
       </div>

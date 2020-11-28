@@ -1,20 +1,20 @@
-.mainDiv {
-  margin: auto;
-  width: 80%;
-  height: 450px;
-  padding: 10px;
-  margin-top: 50px;
+.container {
+  display: flex;
+  justify-content: space-between;
 }
 .regImgDiv {
-  width: 50%;
+  width: 590px;
+  height: 400px;
+  margin-top: 130px;
 }
 .formDiv {
-  width: 50%;
+  width: 450px;
+  height: 450px;
+  margin-top: 80px;
 }
 .registerImg {
   width: 590px;
-  height: 400px;
-  float: left;
+  height: 380px;
 }
 
 .titleReg {

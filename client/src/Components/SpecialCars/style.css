@@ -1,0 +1,23 @@
+#groupBtn {
+  margin: auto;
+}
+
+.w3-btn {
+  width: 28%;
+  height: 65px;
+  margin-bottom: 50px;
+  border: none;
+}
+
+#otherCarsBtn {
+  border-radius: 0;
+}
+
+#dealersBtn {
+  border-radius: 12px 0 0 12px;
+}
+
+#specialCarsBtn {
+  border-radius: 0 12px 12px 0;
+  background-color: #ff6c37;
+}

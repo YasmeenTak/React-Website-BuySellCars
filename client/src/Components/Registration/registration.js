@@ -5,22 +5,37 @@ import './style.css';
 export class Registration extends Component {
   render() {
     return (
-      <div className='mainDiv'>
-        <div className='col regImgDiv'>
+      <div className='container mainDiv'>
+        <div className='regImgDiv'>
           <img src='/assets/img/register.png' className='registerImg' />
         </div>
+        <div className='formDiv'>
+          <div className='row'>
+            <div className='col-sm-6'>
+              <section>
+                <label style={{ float: 'right' }}>الاسم الأول</label>
+                <input
+                  type='text'
+                  id='fname'
+                  name='fname'
+                  placeholder='الاسم الأول'
+                />
+              </section>
+            </div>
 
-        <div className='col formDiv'>
-          {/* <h5 className='titleReg'>إنشاء حساب جديد</h5> */}
-          <form>
-            <label>First name:</label>
-            <br />
-            <input type='text' id='fname' name='fname' />
-            <br />
-            <label>Last name:</label>
-            <br />
-            <input type='text' id='lname' name='lname' />{' '}
-          </form>
+            <div className='col-sm-6'>
+              <section>
+                <label style={{ float: 'right' }}>الاسم الثاني</label>
+
+                <input
+                  type='text'
+                  id='lname'
+                  name='lname'
+                  placeholder='الاسم الثاني'
+                />
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     );

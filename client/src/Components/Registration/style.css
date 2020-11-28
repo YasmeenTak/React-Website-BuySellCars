@@ -3,20 +3,25 @@
   justify-content: space-between;
 }
 .regImgDiv {
-  width: 590px;
-  height: 400px;
-  margin-top: 130px;
+  /* width: 590px;
+  height: 400px; */
+  margin-top: 120px;
 }
 .formDiv {
   width: 450px;
   height: 450px;
-  margin-top: 80px;
-}
-.registerImg {
-  width: 590px;
-  height: 380px;
+  /* margin-top: 40px; */
 }
 
 .titleReg {
-  float: right;
+  margin-bottom: 30px;
+}
+
+.inputReg {
+  background-color: #eceef0;
+  border: none;
+  border-radius: 5px;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0 50px #eceef0 inset; /* Change the bg color when it filled  */
 }

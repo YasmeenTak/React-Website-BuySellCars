@@ -15,10 +15,10 @@ function App() {
     <div className='App'>
       <StaticLine />
       <NavBar />
-      {/* <Head /> */}
+      <Head />
       {/* <Home /> */}
       {/* <Login /> */}
-      <Registration />
+      {/* <Registration /> */}
     </div>
   );
 }

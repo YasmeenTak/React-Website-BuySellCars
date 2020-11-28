@@ -1,40 +1,77 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Form, Row, Col, Button, Check, Group } from 'react-bootstrap';
 import './style.css';
 
 export class Registration extends Component {
   render() {
     return (
       <div className='container mainDiv'>
-        <div className='regImgDiv'>
-          <img src='/assets/img/register.png' className='registerImg' />
-        </div>
-        <div className='formDiv'>
-          <div className='row'>
-            <div className='col-sm-6'>
-              <section>
-                <label style={{ float: 'right' }}>الاسم الأول</label>
-                <input
-                  type='text'
-                  id='fname'
-                  name='fname'
-                  placeholder='الاسم الأول'
-                />
-              </section>
-            </div>
+        <div className='row'>
+          <div className='col-lg-6  regImgDiv '>
+            <img src='/assets/img/register.png' className='img-fluid' />
+          </div>
+          <div className='col mt-5 formDiv'>
+            <Form>
+              <h5 className='titleReg'>إنشاء حساب جديد</h5>
+              <Form.Row>
+                <Form.Group as={Col} controlId='formGridEmail'>
+                  <Form.Label>الاسم الثاني</Form.Label>
+                  <Form.Control type='text' placeholder='الاسم الثاني' className='inputReg' />
+                </Form.Group>
 
-            <div className='col-sm-6'>
-              <section>
-                <label style={{ float: 'right' }}>الاسم الثاني</label>
+                <Form.Group as={Col} controlId='formGridPassword'>
+                  <Form.Label>الاسم الأول</Form.Label>
+                  <Form.Control type='text' placeholder='الاسم الأول'  className='inputReg' />
+                </Form.Group>
+              </Form.Row>
 
-                <input
-                  type='text'
-                  id='lname'
-                  name='lname'
-                  placeholder='الاسم الثاني'
-                />
-              </section>
-            </div>
+              <Form.Group controlId='formGridEmail'>
+                <Form.Label>البريد الإلكتروني</Form.Label>
+                <Form.Control type='email' placeholder='admin@company.com'  className='inputReg' />
+              </Form.Group>
+
+              <Form.Group controlId='formGridPhoneNum'>
+                <Form.Label>رقم الهاتف المحمول</Form.Label>
+                <Form.Control placeholder='0591234567'  className='inputReg' />
+              </Form.Group>
+
+              <Form.Row>
+                <Form.Group as={Col} controlId='formGridPass2'>
+                  <Form.Label>تأكيد كلمة المرور</Form.Label>
+                  <Form.Control type='password' placeholder='********'  className='inputReg' />
+                </Form.Group>
+
+                <Form.Group as={Col} controlId='formGridPass'>
+                  <Form.Label>كلمة المرور</Form.Label>
+                  <Form.Control type='password' placeholder='********'  className='inputReg' />
+                </Form.Group>
+              </Form.Row>
+
+              <p>تذكر حسابي</p>
+              {/* <Form.Group as={Row} controlId='formHorizontalCheck'>
+                <Col sm={{ span: 10, offset: 2 }}>
+                  <Form.Check label='Remember me' />
+                </Col>
+              </Form.Group> */}
+
+              <Button
+                variant='primary'
+                type='submit'
+                style={{
+                  background: '#ff6c37',
+                  border: '1px solid #ff6c37',
+                  borderRadius: '12px',
+                  width: '180px',
+                }}
+              >
+                إنشاء حساب
+              </Button>
+              <p className='makeAccount'>
+                لديك حساب بالفعل؟ <a href='/Login'>قم بتسجيل الدخول</a>
+              </p>
+            </Form>
           </div>
         </div>
       </div>

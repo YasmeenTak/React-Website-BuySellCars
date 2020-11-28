@@ -8,47 +8,54 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export class Head extends Component {
   render() {
     return (
-      <div>
-        <div className='head-container'>
-          <div className='leftDiv'>
-            <div class='row parent'>
-              <img src='assets/img/header1.png' className='headRight' />
-              <img src='assets/img/carHead.png' className='carHead' />
-            </div>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-lg-6  pl-0 parent'>
+            <img
+              src='assets/img/header1.png'
+              className='img-fluid '
+              id='headRight'
+            />
+            <img
+              src='assets/img/carHead.png'
+              className='img-fluid  '
+              id='carHead'
+            />
           </div>
 
-          <div className='rightDiv'>
-            <h4 className='pHead1'>
+          <div className='col-lg-6 cl-md-6 pr-5' id='rightDiv'>
+            <h5 className='pHead1'>
               نحن هنا لمساعدتك في اختيار السيارة الأفضل لك
-            </h4>
+            </h5>
             <h6 className='pHead2'>
               ابحث هنا واحجز سيارتك للشراء وسنقوم بالتواصل معك في أقرب وقت
             </h6>
 
-            <div class='input-container'>
-              {/*           
-              <input
+            <InputGroup className='mt-5 mb-5 w-75' style={{float:'right'}} >
+              <InputGroup.Prepend>
+                <Button
+                  variant='outline-secondary'
+                  style={{ backgroundColor: '#ff6c37', color: 'white' }}
+                >
+                  {/* <img src='/assets/img/filterIcon.png' className='filterIcon'></img> */}
+                  Search
+                </Button>
+              </InputGroup.Prepend>
+              <FormControl
+                aria-describedby='basic-addon1'
                 type='text'
                 placeholder='ابحث هنا'
-                className='searchInput'
-              /> */}
+              />
+            </InputGroup>
 
-              <InputGroup className='mb-3'>
-                <InputGroup.Prepend>
-                  <Button variant='outline-secondary'>Button</Button>
-                </InputGroup.Prepend>
-                <FormControl aria-describedby='basic-addon1' />
-              </InputGroup>
-            </div>
-
-            {/* <div className='appButton'>
+            <div className='appButton'>
               <a href='https://play.google.com/store' target='_blank'>
                 <img src='/assets/img/googlePlay.png' id='appBtn' />
               </a>
               <a href='https://www.apple.com/app-store/' target='_blank'>
                 <img src='/assets/img/appleStore.png' id='appBtn' />
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

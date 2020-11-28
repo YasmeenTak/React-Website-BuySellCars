@@ -18,34 +18,54 @@ export class Registration extends Component {
               <Form.Row>
                 <Form.Group as={Col} controlId='formGridEmail'>
                   <Form.Label>الاسم الثاني</Form.Label>
-                  <Form.Control type='text' placeholder='الاسم الثاني' className='inputReg' />
+                  <Form.Control
+                    type='text'
+                    placeholder='الاسم الثاني'
+                    className='inputReg'
+                  />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId='formGridPassword'>
                   <Form.Label>الاسم الأول</Form.Label>
-                  <Form.Control type='text' placeholder='الاسم الأول'  className='inputReg' />
+                  <Form.Control
+                    type='text'
+                    placeholder='الاسم الأول'
+                    className='inputReg'
+                  />
                 </Form.Group>
               </Form.Row>
 
               <Form.Group controlId='formGridEmail'>
                 <Form.Label>البريد الإلكتروني</Form.Label>
-                <Form.Control type='email' placeholder='admin@company.com'  className='inputReg' />
+                <Form.Control
+                  type='email'
+                  placeholder='admin@company.com'
+                  className='inputReg'
+                />
               </Form.Group>
 
               <Form.Group controlId='formGridPhoneNum'>
                 <Form.Label>رقم الهاتف المحمول</Form.Label>
-                <Form.Control placeholder='0591234567'  className='inputReg' />
+                <Form.Control placeholder='0591234567' className='inputReg' />
               </Form.Group>
 
               <Form.Row>
                 <Form.Group as={Col} controlId='formGridPass2'>
                   <Form.Label>تأكيد كلمة المرور</Form.Label>
-                  <Form.Control type='password' placeholder='********'  className='inputReg' />
+                  <Form.Control
+                    type='password'
+                    placeholder='********'
+                    className='inputReg'
+                  />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId='formGridPass'>
                   <Form.Label>كلمة المرور</Form.Label>
-                  <Form.Control type='password' placeholder='********'  className='inputReg' />
+                  <Form.Control
+                    type='password'
+                    placeholder='********'
+                    className='inputReg'
+                  />
                 </Form.Group>
               </Form.Row>
 

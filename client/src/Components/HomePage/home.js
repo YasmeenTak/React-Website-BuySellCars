@@ -34,36 +34,6 @@ export class home extends Component {
   render() {
     return (
       <div>
-        {/* <section className='header'>
-          <Row>
-            <Row class='parent'>
-              <img src='assets/img/header1.png' className='headRight' />
-              <img src='assets/img/carHead.png' className='carHead' />
-            </Row>
-            <Col>
-              <div className='headDetails'>
-                <h3 className='pHead1'>
-                  نحن هنا لمساعدتك في اختيار السيارة الأفضل لك
-                </h3>
-                <h6 className='pHead2'>
-                  ابحث هنا واحجز سيارتك للشراء وسنقوم بالتواصل معك في أقرب وقت
-                </h6>
-                <form>
-                  <input type='text' placeholder='ابحث هنا' />
-                </form>
-
-                <a href='https://play.google.com/store' target='_blank'>
-                  <img src='/assets/img/googlePlay.png' id='appBtn' />
-                </a>
-
-                <a href='https://www.apple.com/app-store/' target='_blank'>
-                  <img src='/assets/img/appleStore.png' id='appBtn' />
-                </a>
-              </div>
-            </Col>
-          </Row>
-        </section> */}
-
         <Head />
         {/* ----------------------------------- Section2 ---------------------------------------- */}
         <div>

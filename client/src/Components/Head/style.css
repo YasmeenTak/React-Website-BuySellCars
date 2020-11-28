@@ -1,41 +1,33 @@
-.head-container {
-  display: flex;
-}
-
-.leftDiv {
-  width: 45%;
-  height: 540px;
-}
-.rightDiv {
-  width: 50%;
-  height: 450px;
-  flex-direction: row;
-  float: right;
-  margin-top: 180px;
-}
-
 .parent {
   position: relative;
   top: 0;
   left: 0;
 }
-.headRight {
+#headRight {
   position: relative;
   top: 0;
   float: left;
   height: 540px;
 }
-.carHead {
+#carHead {
   position: absolute;
   width: 680px;
   height: 350px;
   top: 150px;
   left: 10px;
 }
+#rightDiv {
+  /* width: 50%;
+  height: 450px; */
+  margin-top: 180px;
+}
 
 #appBtn {
   width: 150px;
-  height: 50px;
+  height: 45px;
+}
+.appButton{
+  float: right;
 }
 
 .pHead1 {
@@ -50,22 +42,10 @@
 
 .filterIcon {
   width: 100px;
-  height: 43px;
+  height: 30px;
 }
-/* 
-.input-container {
-  background: url(img/filterIcon.png) no-repeat right center;
-} */
 
-/* .searchInput {
-  background-image: url(/assets/img/filterIcon.png);
-} */
-
-.searchInput {
-  background-color: white;
-  border: 1px solid #a8a8a8;
-  margin-top: 40px;
-  float: right;
-  padding: 10px 20px 10px;
-  height: 35px;
+#searchInput{
+  margin-right: 500px;
 }
+

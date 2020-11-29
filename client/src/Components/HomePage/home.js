@@ -4,8 +4,10 @@ import React, { Component } from 'react';
 // import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 // import '@brainhubeu/react-carousel/lib/style.css';
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+// import Carousel from 'react-multi-carousel';
+// import 'react-multi-carousel/lib/styles.css';
+import OwlCarousel from 'react-owl-carousel2';
+import 'react-owl-carousel2/style.css'
 
 import './style.css';
 import Head from '../Head/Head';
@@ -37,19 +39,29 @@ export class home extends Component {
         <Head />
         {/* ----------------------------------- Section2 ---------------------------------------- */}
         <div>
-          <section>
-            <div id='firstInSec2'>
-              {/* <a>عرض الكل</a> */}
-              <p id='topCars' style={{ fontWeight: 'bold' }}>
+          <div>
+            {/* <div id='row firstInSec2'>
+              <p className='col' id='topCars' style={{ fontWeight: 'bold' }}>
                 السيارات المميزة
               </p>
+              <a className='col'>عرض الكل</a>
             </div>
-            <p>
-              السيارات المميزة ذات الموصفات العالية السيارات المميزة ذات
-              الموصفات العالية
-            </p>
-            {/* ----------------------------------------------- slider start ------------------------------------------ */}
-            {/* <div id='slider'>
+            <div className='row'>
+              <p>
+                السيارات المميزة ذات الموصفات العالية السيارات المميزة ذات
+                الموصفات العالية
+              </p>
+            </div> */}
+            <div>
+              <p id='topCars'>السيارات المميزة</p>
+              {/* <p className='col'>
+                السيارات المميزة ذات الموصفات العالية السيارات المميزة ذات
+                الموصفات العالية
+              </p> */}
+            </div>
+          </div>
+          {/* ----------------------------------------------- slider start ------------------------------------------ */}
+          {/* <div id='slider'>
               <Carousel
                 plugins={[
                   'infinite',
@@ -67,126 +79,43 @@ export class home extends Component {
                 <img src='/assets/img/car 4.png' />
               </Carousel>
             </div> */}
-            <Carousel responsive={responsive} className='carouselSlider'>
-              <img
-                src='/assets/img/car 2.png'
-                alt='car'
-                className='imgSlider'
-              />
-              <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-              <img
-                src='/assets/img/car 4.png'
-                alt='car'
-                className='imgSlider'
-              />
-              <img
-                src='/assets/img/car 2.png'
-                alt='car'
-                className='imgSlider'
-              />
-              <img
-                src='/assets/img/car 2.png'
-                alt='car'
-                className='imgSlider'
-              />
-              <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-              <img
-                src='/assets/img/car 4.png'
-                alt='car'
-                className='imgSlider'
-              />
-              <img
-                src='/assets/img/car 2.png'
-                alt='car'
-                className='imgSlider'
-              />
-            </Carousel>
+          <Carousel responsive={responsive} className='carouselSlider'>
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+          </Carousel>
+          <p id='topCars'>السيارات الأخيرة</p>
 
-            {/* ----------------------------------------------- slider end ------------------------------------------ */}
-          </section>
+          <Carousel responsive={responsive} className='carouselSlider'>
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+          </Carousel>
+          <p id='topCars'>المتعاقدون</p>
+
+          <Carousel responsive={responsive} className='carouselSlider'>
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
+            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
+          </Carousel>
+
+          {/* ----------------------------------------------- slider end ------------------------------------------ */}
         </div>
-        {/* --------------------------------------- Footer Start ------------------------------------- */}
-
-        <footer id='footer'>
-          <div className='footer-top'>
-            <div className='container'>
-              <div className='row'>
-                <div className='col-lg-3 col-md-6 footer-info'>
-                  <h4>NJ Cash Cars</h4>
-                  <p>
-                    Get cash for your used car in New Jersey. We pay the highest
-                    dollars. We come to you and buy your car as it is! Sell your
-                    car quickly and easily today!
-                  </p>
-                </div>
-
-                <div className='col-lg-3 col-md-6 footer-links'>
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li>
-                      <i className='fa fa-angle-right'></i> <a href='#s'>Home</a>
-                    </li>
-                    <li>
-                      <i className='fa fa-angle-right'></i>{' '}
-                      <a href='#'>About us</a>
-                    </li>
-                    <li>
-                      <i className='fa fa-angle-right'></i>{' '}
-                      <a href='#'>Blogs</a>
-                    </li>
-                    <li>
-                      <i className='fa fa-angle-right'></i> <a href='#'>FQAs</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className='col-lg-3 col-md-6 footer-links'>
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li>
-                      <i className='fa fa-angle-right'></i> <a href='#'>Home</a>
-                    </li>
-                    <li>
-                      <i className='fa fa-angle-right'></i>{' '}
-                      <a href='#'>About us</a>
-                    </li>
-                    <li>
-                      <i className='fa fa-angle-right'></i>{' '}
-                      <a href='#'>Blogs</a>
-                    </li>
-                    <li>
-                      <i className='fa fa-angle-right'></i> <a href='#'>FQAs</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className='col-lg-3 col-md-6 footer-contact'>
-                  <h4>Contact Us</h4>
-                  <p>Call Now : +1(908) 688-4059</p>
-
-                  <div className='social-links'>
-                    <a href='#' className='twitter'>
-                      <i className='fa fa-twitter'></i>
-                    </a>
-                    <a href='#' className='facebook'>
-                      <i className='fa fa-facebook'></i>
-                    </a>
-                    <a href='#' className='instagram'>
-                      <i className='fa fa-instagram'></i>
-                    </a>
-                    <a href='#' className='google-plus'>
-                      <i className='fa fa-google-plus'></i>
-                    </a>
-                    <a href='#' className='linkedin'>
-                      <i className='fa fa-linkedin'></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-        {/* ---------------------------------------- Footer End ------------------------------------- */}
       </div>
     );
   }

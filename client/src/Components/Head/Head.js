@@ -31,13 +31,16 @@ export class Head extends Component {
               ابحث هنا واحجز سيارتك للشراء وسنقوم بالتواصل معك في أقرب وقت
             </h6>
 
-            <InputGroup className='mt-5 mb-5 w-75' style={{float:'right'}} >
+            <InputGroup className='mt-5 mb-5 w-75' style={{ float: 'right' }}>
               <InputGroup.Prepend>
                 <Button
                   variant='outline-secondary'
                   style={{ backgroundColor: '#ff6c37', color: 'white' }}
                 >
-                  {/* <img src='/assets/img/filterIcon.png' className='filterIcon'></img> */}
+                  {/* <img
+                    src='/assets/fontello/font/icons.svg'
+                    className='filterIcon'
+                  ></img> */}
                   Search
                 </Button>
               </InputGroup.Prepend>

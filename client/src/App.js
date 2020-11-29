@@ -5,6 +5,8 @@ import NavBar from './Components/NavBar/navbar';
 import Registration from './Components/Registration/registration';
 import Login from './Components/Login/Login';
 import Head from './Components/Head/Head';
+import Footer from './Components/Footer/Footer';
+
 import SpecialCars from './Components/SpecialCars/SpecialCars';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,10 +17,11 @@ function App() {
     <div className='App'>
       <StaticLine />
       <NavBar />
-      <Head />
+      {/* <Head /> */}
       {/* <Home /> */}
       {/* <Login /> */}
-      {/* <Registration /> */}
+      <Registration />
+      {/* <Footer /> */}
     </div>
   );
 }

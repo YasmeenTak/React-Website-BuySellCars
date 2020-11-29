@@ -18,9 +18,9 @@ function App() {
       <StaticLine />
       <NavBar />
       {/* <Head /> */}
-      {/* <Home /> */}
+      <Home />
       {/* <Login /> */}
-      <Registration />
+      {/* <Registration /> */}
       {/* <Footer /> */}
     </div>
   );

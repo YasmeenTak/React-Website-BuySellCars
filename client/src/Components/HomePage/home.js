@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 //import { Row, Col, Footer } from 'react-bootstrap';
-//import Carousel from 'react-elastic-carousel';
-// import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+// import Carousel from 'react-elastic-carousel';
+import slidesToShowPlugin from '@brainhubeu/react-carousel';
 // import '@brainhubeu/react-carousel/lib/style.css';
+
+import Carousel from 'react-elastic-carousel';
 
 // import Carousel from 'react-multi-carousel';
 // import 'react-multi-carousel/lib/styles.css';
@@ -17,6 +19,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './style.css';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
+
+import Slider from 'bootstrap';
 
 // const responsive = {
 //   superLargeDesktop: {
@@ -48,10 +52,10 @@ const options = {
   dots: true,
   responsive: {
     0: {
-      items: 2,
+      items: 6,
     },
     600: {
-      items: 5,
+      items: 6,
     },
     1000: {
       items: 6,
@@ -59,8 +63,23 @@ const options = {
   },
 };
 
+var settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  initialSlide: 0,
+};
+
 export class home extends Component {
   render() {
+    const breakpoint = [
+      { width: 500, itemToShow: 1 },
+      { width: 768, itemToShow: 2 },
+      { width: 1200, itemToShow: 3 },
+      { width: 1500, itemToShow: 4 },
+    ];
     return (
       <div>
         <OwlCarousel className='owl-theme' loop margin={5} nav></OwlCarousel>
@@ -89,24 +108,50 @@ export class home extends Component {
             </div>
           </div>
           {/* ----------------------------------------------- slider start ------------------------------------------ */}
-          {/* <div id='slider'>
-              <Carousel
-                plugins={[
-                  'infinite',
-                  'arrows',
-                  {
-                    resolve: slidesToShowPlugin,
-                    options: {
-                      numberOfSlides: 3,
-                    },
-                  },
-                ]}
-              >
-                <img src='/assets/img/car 2.png' />
-                <img src='/assets/img/car1.png' />
-                <img src='/assets/img/car 4.png' />
-              </Carousel>
-            </div> */}
+          <div>
+            <form>
+              <h2> Comady </h2>
+              <Slider className='renderComady' {...settings}>
+                <img src='/assets/img/car 4.png' className='zeft' />
+              </Slider>
+
+              <h2> Action </h2>
+              <Slider className='renderComady' {...settings}>
+                <img src='/assets/img/car 4.png' className='zeft' />
+              </Slider>
+
+              <h2> Animation </h2>
+              <Slider className='renderComady' {...settings}>
+                <img src='/assets/img/car 4.png' className='zeft' />
+              </Slider>
+
+              <h2> Romantic </h2>
+              <Slider className='renderComady' {...settings}>
+                <img src='/assets/img/car 4.png' className='zeft' />
+              </Slider>
+            </form>
+            <Carousel
+              breakpoint={breakpoint}
+              // plugins={[
+              //   'infinite',
+              //   'arrows',
+              //   {
+              //     resolve: slidesToShowPlugin,
+              //     options: {
+              //       numberOfSlides: 6,
+              //     },
+              //   },
+              // ]}
+            >
+              <img src='/assets/img/lap.jpg' className='zeft' />
+              <img src='/assets/img/car1.png' className='zeft' />
+              <img src='/assets/img/car 4.png' className='zeft' />
+              <img src='/assets/img/car 4.png' className='zeft' />
+              <img src='/assets/img/car 2.png' className='zeft' />
+              <img src='/assets/img/car 4.png' className='zeft' />
+              <img src='/assets/img/car 2.png' className='zeft' />
+            </Carousel>
+          </div>
           {/* <Carousel responsive={responsive} className='carouselSlider'>
             <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
             <img src='/assets/img/car1.png' alt='car' className='imgSlider' />

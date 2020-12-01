@@ -1,26 +1,13 @@
 import React, { Component } from 'react';
 //import { Row, Col, Footer } from 'react-bootstrap';
-// import Carousel from 'react-elastic-carousel';
-import slidesToShowPlugin from '@brainhubeu/react-carousel';
-// import '@brainhubeu/react-carousel/lib/style.css';
-
-import Carousel from 'react-elastic-carousel';
-
-// import Carousel from 'react-multi-carousel';
-// import 'react-multi-carousel/lib/styles.css';
-
-// import OwlCarousel from 'react-owl-carousel2';
-//import 'react-owl-carousel2/style.css';
-
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-
 import './style.css';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
 
-import Slider from 'bootstrap';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 // const responsive = {
 //   superLargeDesktop: {
@@ -64,25 +51,29 @@ const options = {
 };
 
 var settings = {
+  arrows: true,
   dots: true,
   infinite: false,
+  rewind: true,
+  autoplay: true,
   speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  initialSlide: 0,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  initialSlide: 6,
+  rtl: true,
 };
 
 export class home extends Component {
   render() {
-    const breakpoint = [
-      { width: 500, itemToShow: 1 },
-      { width: 768, itemToShow: 2 },
-      { width: 1200, itemToShow: 3 },
-      { width: 1500, itemToShow: 4 },
-    ];
+    // const breakpoint = [
+    //   { width: 500, itemToShow: 1 },
+    //   { width: 768, itemToShow: 2 },
+    //   { width: 1200, itemToShow: 3 },
+    //   { width: 1500, itemToShow: 4 },
+    // ];
     return (
       <div>
-        <OwlCarousel className='owl-theme' loop margin={5} nav></OwlCarousel>
+        {/* <OwlCarousel className='owl-theme' loop margin={5} nav></OwlCarousel> */}
         <Head />
         {/* ----------------------------------- Section2 ---------------------------------------- */}
         <div>
@@ -100,174 +91,101 @@ export class home extends Component {
               </p>
             </div> */}
             <div>
-              <p id='topCars'>السيارات المميزة</p>
+              {/* <p id='topCars'>السيارات المميزة</p> */}
               {/* <p className='col'>
                 السيارات المميزة ذات الموصفات العالية السيارات المميزة ذات
                 الموصفات العالية
               </p> */}
             </div>
           </div>
+
           {/* ----------------------------------------------- slider start ------------------------------------------ */}
           <div>
-            <form>
-              <h2> Comady </h2>
+            <form id='formSlider'>
+              <div className='titlesSliderDiv'>
+                <h5 className='titleSlider'>السيارات المميزة</h5>
+                <h6 className='subTitleSlider'>
+                  السيارات المميزة ذات المواصفات العالية السيارات المميزة ذات
+                  المواصفات العالية
+                </h6>
+              </div>
               <Slider className='renderComady' {...settings}>
-                <img src='/assets/img/car 4.png' className='zeft' />
-              </Slider>
-
-              <h2> Action </h2>
-              <Slider className='renderComady' {...settings}>
-                <img src='/assets/img/car 4.png' className='zeft' />
-              </Slider>
-
-              <h2> Animation </h2>
-              <Slider className='renderComady' {...settings}>
-                <img src='/assets/img/car 4.png' className='zeft' />
-              </Slider>
-
-              <h2> Romantic </h2>
-              <Slider className='renderComady' {...settings}>
-                <img src='/assets/img/car 4.png' className='zeft' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/lap.jpg' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car1.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/lap.jpg' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car1.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
               </Slider>
             </form>
-            <Carousel
-              breakpoint={breakpoint}
-              // plugins={[
-              //   'infinite',
-              //   'arrows',
-              //   {
-              //     resolve: slidesToShowPlugin,
-              //     options: {
-              //       numberOfSlides: 6,
-              //     },
-              //   },
-              // ]}
-            >
-              <img src='/assets/img/lap.jpg' className='zeft' />
-              <img src='/assets/img/car1.png' className='zeft' />
-              <img src='/assets/img/car 4.png' className='zeft' />
-              <img src='/assets/img/car 4.png' className='zeft' />
-              <img src='/assets/img/car 2.png' className='zeft' />
-              <img src='/assets/img/car 4.png' className='zeft' />
-              <img src='/assets/img/car 2.png' className='zeft' />
-            </Carousel>
           </div>
-          {/* <Carousel responsive={responsive} className='carouselSlider'>
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-          </Carousel>
-          <p id='topCars'>السيارات الأخيرة</p>
 
-          <Carousel responsive={responsive} className='carouselSlider'>
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-          </Carousel>
-          <p id='topCars'>المتعاقدون</p>
+          <div>
+            <form id='formSlider'>
+              <div className='titlesSliderDiv'>
+                <h5 className='titleSlider'>السيارات الأخيرة</h5>
+                <h6 className='subTitleSlider'>
+                  السيارات ذات المواصفات المتفاوتة والتي يمكن الوصول إليه في أي
+                  وقت
+                </h6>
+              </div>
+              <Slider className='renderComady' {...settings}>
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/lap.jpg' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car1.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/lap.jpg' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car1.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+              </Slider>
+            </form>
+          </div>
 
-          <Carousel responsive={responsive} className='carouselSlider'>
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 4.png' alt='car' className='imgSlider' />
-            <img src='/assets/img/car 2.png' alt='car' className='imgSlider' />
-          </Carousel> */}
-
-          <OwlCarousel ref='car' options={options}>
-            <div>
-              <img
-                src='/assets/img/car 4.png'
-                alt='car'
-                className='imgSlider'
-              />
-            </div>
-            <div>
-              <img
-                src='/assets/img/car 2.png'
-                alt='car'
-                className='imgSlider'
-              />
-            </div>
-            <div>
-              <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            </div>
-            <div>
-              <img
-                src='/assets/img/car 4.png'
-                alt='car'
-                className='imgSlider'
-              />
-            </div>
-            <div>
-              <img
-                src='/assets/img/car 2.png'
-                alt='car'
-                className='imgSlider'
-              />
-            </div>
-            <div>
-              <img src='/assets/img/car1.png' alt='car' className='imgSlider' />
-            </div>
-          </OwlCarousel>
-
-          {/* ----------------------------------------------- slider end ------------------------------------------ */}
-
-          <div class='container-fluid '>
-            <div class='owl-carousel owl-them'>
-              <div class='item'>
-                <div class='card bg-dark text-white mb-3 mb-lg-0'>
-                  <img src='/assets/img/car 4.png' class='card-img' alt='...' />
-                </div>
+          <div>
+            <form id='formSlider'>
+              <div className='titlesSliderDiv'>
+                <h5 className='titleSlider'>المتعاقدون</h5>
+                <h6 className='subTitleSlider'>
+                  السيارات التابعة لمعارض متنوعة ومختلفة وبعدة مواصفات
+                </h6>
               </div>
-              <div class='item'>
-                <div class='card bg-dark text-white mb-3 mb-lg-0'>
-                  <img src='/assets/img/car 2.png' class='card-img' alt='...' />
-                </div>
-              </div>
-              <div class='item'>
-                <div class='card bg-dark text-white mb-3 mb-lg-0'>
-                  <img src='/assets/img/car 4.png' class='card-img' alt='...' />
-                </div>
-              </div>
-              <div class='item'>
-                <div class='card bg-dark text-white mb-3 mb-lg-0'>
-                  <img src='/assets/img/car 4.png' class='card-img' alt='...' />
-                </div>
-              </div>
-              <div class='item'>
-                <div class='card bg-dark text-white mb-3 mb-lg-0'>
-                  <img src='/assets/img/car 4.png' class='card-img' alt='...' />
-                </div>
-              </div>
-              <div class='item'>
-                <div class='card bg-dark text-white mb-3 mb-lg-0'>
-                  <img src='/assets/img/car 4.png' class='card-img' alt='...' />
-                </div>
-              </div>
-              <div class='item'>
-                <div class='card bg-dark text-white mb-3 mb-lg-0'>
-                  <img src='/assets/img/car 4.png' class='card-img' alt='...' />
-                </div>
-              </div>
-            </div>
+              <Slider className='renderComady' {...settings}>
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/lap.jpg' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car1.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/lap.jpg' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+                <img src='/assets/img/car1.png' className='imgSlider' />
+                <img src='/assets/img/car 4.png' className='imgSlider' />
+                <img src='/assets/img/car 2.png' className='imgSlider' />
+              </Slider>
+            </form>
           </div>
         </div>
 
-        {/* <Footer /> */}
+        {/* ----------------------------------------------- slider end ------------------------------------------ */}
+        <Footer />
       </div>
     );
   }

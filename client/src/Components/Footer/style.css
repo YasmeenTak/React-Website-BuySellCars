@@ -1,12 +1,13 @@
 .footer {
   background-color: #ff6c37;
   color: white;
+  margin-top: 120px;
 }
 
 .text {
-    color: white;
-    text-align: right;
-  }
+  color: white;
+  text-align: right;
+}
 
 #button-addon1 {
   color: #ffc371;
@@ -25,3 +26,5 @@ i {
   box-shadow: none;
 }
 
+/* .socialMediaIcons {
+} */

@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+  faApple,
+  faFacebookF,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
@@ -116,10 +122,30 @@ export class Footer extends Component {
                   width='180'
                   class='mb-3'
                 />
-                <p class='font-italic text'>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
+                <div className='socialMediaIcons'>
+                  <FontAwesomeIcon
+                    icon={faApple}
+                    style={{ color: 'black', marginRight: '20px' }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    style={{ color: '#00719B', marginRight: '20px' }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    style={{ color: '#1BA5EC', marginRight: '20px' }}
+                  />
+                </div>
+
+                <div className='appButton'>
+                  <a href='https://play.google.com/store' target='_blank'>
+                    <img src='/assets/img/googlePlay.png' id='appBtn' />
+                  </a>
+                  <a href='https://www.apple.com/app-store/' target='_blank'>
+                    <img src='/assets/img/appleStore.png' id='appBtn' />
+                  </a>
+                </div>
+                
                 <ul class='list-inline mt-4'>
                   <li class='list-inline-item'>
                     <a href='#' target='_blank' title='twitter'>

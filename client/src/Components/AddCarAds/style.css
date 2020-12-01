@@ -1,0 +1,20 @@
+.mainDiv {
+  margin-bottom: 80px;
+}
+select {
+  direction: rtl;
+}
+
+#allInputs {
+  margin: 15px;
+}
+
+.formSelectDiv {
+  width: 180px;
+  margin-left: 50px;
+}
+
+.description {
+  padding-top: 15px;
+  padding-bottom: 80px;
+}

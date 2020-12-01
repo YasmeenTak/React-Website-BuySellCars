@@ -111,14 +111,12 @@ export class home extends Component {
               </div>
               <Slider className='renderComady' {...settings}>
                 <img src='/assets/img/car 4.png' className='imgSlider' />
-                <img src='/assets/img/lap.jpg' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car1.png' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
-                <img src='/assets/img/lap.jpg' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car1.png' className='imgSlider' />
@@ -139,14 +137,12 @@ export class home extends Component {
               </div>
               <Slider className='renderComady' {...settings}>
                 <img src='/assets/img/car 4.png' className='imgSlider' />
-                <img src='/assets/img/lap.jpg' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car1.png' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
-                <img src='/assets/img/lap.jpg' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car1.png' className='imgSlider' />
@@ -166,14 +162,12 @@ export class home extends Component {
               </div>
               <Slider className='renderComady' {...settings}>
                 <img src='/assets/img/car 4.png' className='imgSlider' />
-                <img src='/assets/img/lap.jpg' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car1.png' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
-                <img src='/assets/img/lap.jpg' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />
                 <img src='/assets/img/car1.png' className='imgSlider' />

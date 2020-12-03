@@ -1,12 +1,13 @@
 .navbar {
   height: 130%;
   /* box-shadow: 0 1px #818181; */
+  direction: rtl;
 }
 
 .logoImg {
   width: 150px;
   height: 30px;
-  margin-right: 65px;
+  margin-right: 20px;
 }
 
 .mr-auto {

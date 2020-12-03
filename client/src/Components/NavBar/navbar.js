@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import './style.css';
-import { Nav, Button, Navbar, FormControl, Form } from 'react-bootstrap';
+import {
+  Nav,
+  Button,
+  Navbar,
+  FormControl,
+  Form,
+  NavDropdown,
+} from 'react-bootstrap';
 // import { Button } from '@material-ui/core';
 
 export class navbar extends Component {
@@ -8,8 +15,22 @@ export class navbar extends Component {
     return (
       <div>
         <Navbar bg='light' expand='lg'>
+          <Navbar href='#home'>
+            <img src='assets/img/logo.png' className='logoImg' />
+          </Navbar>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='mr-auto'>
+              <Nav.Link href='#contactus' style={{ color: 'black' }}>
+                تواصل معنا
+              </Nav.Link>
+              <Nav.Link href='#faqs' style={{ color: 'black' }}>
+                الأسئلة الشائعة
+              </Nav.Link>
+              <Nav.Link href='#aboutus' style={{ color: 'black' }}>
+                من نحن؟
+              </Nav.Link>
+            </Nav>
             <Form inline id='Btns'>
               <Button
                 variant='outline-success'
@@ -37,21 +58,7 @@ export class navbar extends Component {
                 تسجيل الدخول
               </Button>
             </Form>
-            <Nav className='mr-auto'>
-              <Nav.Link href='#contactus' style={{ color: 'black' }}>
-                تواصل معنا
-              </Nav.Link>
-              <Nav.Link href='#faqs' style={{ color: 'black' }}>
-                الأسئلة الشائعة
-              </Nav.Link>
-              <Nav.Link href='#aboutus' style={{ color: 'black' }}>
-                من نحن؟
-              </Nav.Link>
-            </Nav>
           </Navbar.Collapse>
-          <Navbar href='#home'>
-            <img src='assets/img/logo.png' className='logoImg' />
-          </Navbar>
         </Navbar>
       </div>
     );

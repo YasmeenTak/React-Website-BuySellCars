@@ -23,64 +23,76 @@ export class Footer extends Component {
                 <p class='text mb-4'>
                   ليصلك كل جديد الرجاء الاشتراك بكتابة البريد الإلكتروني
                 </p>
-                <div class='p-1 rounded border'>
-                  <div class='input-group'>
-                    <input
-                      type='email'
-                      placeholder='jeamen1990@gmail.com'
-                      aria-describedby='button-addon1'
-                      class='form-control border-0 shadow-0'
-                    />
-                    <div class='input-group-append'>
-                      <button
-                        id='button-addon1'
-                        type='submit'
-                        class='btn btn-link'
-                      >
-                        <i class='fa fa-paper-plane'></i>
-                      </button>
-                    </div>
+                {/* <div class='input-group'>
+                  <input
+                    type='email'
+                    placeholder='jeamen1990@gmail.com'
+                    aria-describedby='button-addon1'
+                    class='form-control border-0 shadow-0'
+                  />
+                  <div class='input-group-append'>
+                    <button
+                      id='button-addon1'
+                      type='submit'
+                      class='btn btn-link'
+                    >
+                      <i class='fa fa-paper-plane'></i>
+                    </button>
                   </div>
+                </div> */}
+
+                <div class='input-group mb-3'>
+                  <div class='input-group-prepend'>
+                    <button
+                      class='btn btn-outline-secondary'
+                      type='button'
+                      style={{
+                        backgroundColor: '#FFC107',
+                        color: 'white',
+                        border: '#FFC107',
+                      }}
+                    >
+                      اشتراك
+                    </button>
+                  </div>
+                  <input
+                    className='border-0 shadow-0'
+                    type='email'
+                    placeholder='jeamen1990@gmail.com'
+                    class='form-control'
+                    aria-label=''
+                    aria-describedby='basic-addon1'
+                  />
                 </div>
               </div>
-              <div class='col-lg-2 col-md-6 mb-4 mb-lg-0'>
+              <div class='col-lg-2 col-md-6 mb-4 mb-lg-0' id='categoriesSec'>
                 {/* <h6 class='text-uppercase font-weight-bold mb-4'>التصنيفات</h6> */}
                 <ul class='list-unstyled mb-0'>
                   <li class='mb-2'>
                     <a href='#' class='text'>
-                      النصنيفات
+                      التصنيفات
                     </a>
                   </li>
                   <li class='mb-2'>
                     <a href='#' class='text'>
-                      اتصل بنا
+                      السيارات المميزة
                     </a>
                   </li>
                   <li class='mb-2'>
                     <a href='#' class='text'>
-                      الأسئلة الأكثر تكرار
+                      السيارات الأخيرة
                     </a>
                   </li>
                   <li class='mb-2'>
                     <a href='#' class='text'>
-                      من نحن؟
-                    </a>
-                  </li>
-                  <li class='mb-2'>
-                    <a href='#' class='text'>
-                      شروط الاستخدام
-                    </a>
-                  </li>
-                  <li class='mb-2'>
-                    <a href='#' class='text'>
-                      سياسة الخصوصية
+                      المتعاقدون-أصحاب المعارض
                     </a>
                   </li>
                 </ul>
               </div>
               <div class='col-lg-2 col-md-6 mb-4 mb-lg-0'>
                 {/* <h6 class='text-uppercase font-weight-bold mb-4'>روابط مهمة</h6> */}
-                <ul class='list-unstyled mb-0'>
+                <ul class='list-unstyled mb-0' id='ImportantlinksSec'>
                   <li class='mb-2'>
                     <a href='#' class='text'>
                       روابط مهمة
@@ -145,7 +157,7 @@ export class Footer extends Component {
                     <img src='/assets/img/appleStore.png' id='appBtn' />
                   </a>
                 </div>
-                
+
                 <ul class='list-inline mt-4'>
                   <li class='list-inline-item'>
                     <a href='#' target='_blank' title='twitter'>

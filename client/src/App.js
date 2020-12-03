@@ -20,11 +20,11 @@ function App() {
       <StaticLine />
       <NavBar />
       {/* <Head /> */}
-      {/* <Home /> */}
+      <Home />
       {/* <Login /> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
-      <CarDetails />
+      {/* <CarDetails /> */}
       {/* <Footer /> */}
     </div>
   );

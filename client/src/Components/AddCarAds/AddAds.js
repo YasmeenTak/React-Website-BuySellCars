@@ -11,38 +11,43 @@ export class AddAds extends Component {
     return (
       <div className='container mainDiv'>
         <div className='row'>
-          <div className='col-lg-6  regImgDiv '>
+          <div className='col-lg-6 regImgDiv '>
             <img src='/assets/img/register.png' className='img-fluid' />
           </div>
-          <div className='col mt-5 formSelectDiv'>
+          <div className='col-lg-6 col-xs-2 mt-5 formSelectDiv'>
             <Form>
               <h5 className='titleReg'>إعلان بيع سيارة جديدة</h5>
               <div className='innerFormDiv'>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>سنة الإصدار</option>
                 </select>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>براند السيارة</option>
                 </select>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>الموديل</option>
                 </select>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>الزخرفة الخارجية</option>
                 </select>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>النوع</option>
                 </select>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>الحالة العامة</option>
                 </select>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>الحالة المالية</option>
                 </select>
-                <select class='form-control' id='allInputs'>
+                <select class='form-control selectAdd' id='allInputs'>
                   <option>اللون</option>
                 </select>
-                <FormFile id='allInputs' placeholder='إرفاق صور'></FormFile>
+                <FormFile
+                  id='allInputs'
+                  placeholder='إرفاق صور'
+                  style={{ backgroundColor: 'white', textAlign: 'center' }}
+                ></FormFile>
+
                 <input
                   class='form-control'
                   type='text'
@@ -67,25 +72,33 @@ export class AddAds extends Component {
                 <FormControlLabel
                   value='start'
                   control={<Checkbox color='primary' />}
-                  label='أضف مبلغ 10 $ لعرض السيارة في أول نتائج البحث'
+                  label={
+                    <span style={{ fontSize: '0.8rem', color: '#193441' }}>
+                      أضف مبلغ 10$ لعرض السيارة في أول نتائج البحث
+                    </span>
+                  }
                   labelPlacement='start'
                   style={{
-                    paddingLeft: '100px',
+                    width: '535px',
+                    marginBottom: '20px',
                   }}
                 />
-                <Button
-                  variant='primary'
-                  type='submit'
-                  style={{
-                    background: '#ff6c37',
-                    border: '1px solid #ff6c37',
-                    borderRadius: '12px',
-                    width: '120px',
-                    float: 'right',
-                  }}
-                >
-                  عرض للبيع
-                </Button>
+
+                <div className='btnSell'>
+                  <Button
+                    variant='primary'
+                    type='submit'
+                    style={{
+                      background: '#ff6c37',
+                      border: '1px solid #ff6c37',
+                      borderRadius: '12px',
+                      width: '120px',
+                      float: 'right',
+                    }}
+                  >
+                    عرض للبيع
+                  </Button>
+                </div>
               </div>
             </Form>
           </div>

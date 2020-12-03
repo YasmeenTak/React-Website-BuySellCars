@@ -6,6 +6,8 @@ import Head from './Components/Head/Head';
 import Registration from './Components/Registration/registration';
 import Login from './Components/Login/Login';
 import AddAds from './Components/AddCarAds/AddAds';
+import CarDetails from './Components/CarDetails/CarDetails';
+
 import Footer from './Components/Footer/Footer';
 import SpecialCars from './Components/SpecialCars/SpecialCars';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,7 +23,8 @@ function App() {
       {/* <Home /> */}
       {/* <Login /> */}
       {/* <Registration /> */}
-      <AddAds />
+      {/* <AddAds /> */}
+      <CarDetails />
       {/* <Footer /> */}
     </div>
   );

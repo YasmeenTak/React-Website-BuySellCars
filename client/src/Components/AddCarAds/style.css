@@ -10,11 +10,19 @@ select {
 }
 
 .formSelectDiv {
-  width: 180px;
-  margin-left: 50px;
+  /* width: 180px; */
+  /* margin-left: 50px; */
 }
 
 .description {
   padding-top: 15px;
   padding-bottom: 80px;
+}
+
+.btnSell {
+  padding-right: 80px;
+}
+
+.selectAdd {
+  /* padding-left: 150px; */
 }

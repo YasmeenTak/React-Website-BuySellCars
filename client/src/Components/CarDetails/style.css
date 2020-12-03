@@ -1,3 +1,25 @@
-.container {
-  display: flex;
+/* .container {
+} */
+
+
+
+.single-product .col-6 img {
+  padding: 0;
 }
+
+.single-product .col-6 {
+  padding: 20px;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+

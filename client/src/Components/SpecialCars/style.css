@@ -1,4 +1,13 @@
-#groupBtn {
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .col-lg-6 {
+  border: 1px solid black;
+} */
+
+/* #groupBtn {
   margin: auto;
 }
 
@@ -20,4 +29,4 @@
 #specialCarsBtn {
   border-radius: 0 12px 12px 0;
   background-color: #ff6c37;
-}
+} */

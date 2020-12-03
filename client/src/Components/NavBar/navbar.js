@@ -14,7 +14,7 @@ export class navbar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg='light' expand='lg'>
+        <Navbar bg='withe' expand='lg'>
           <Navbar href='#home'>
             <img src='assets/img/logo.png' className='logoImg' />
           </Navbar>
@@ -34,18 +34,6 @@ export class navbar extends Component {
             <Form inline id='Btns'>
               <Button
                 variant='outline-success'
-                className='singInBtn mr-sm-2 mr-1'
-                style={{
-                  background: '#FFFFFF',
-                  color: '#ff6c37',
-                  border: '1px solid #ff6c37',
-                  borderRadius: '7px',
-                }}
-              >
-                تسجيل
-              </Button>
-              <Button
-                variant='outline-success'
                 className='loginBtn mr-sm-2'
                 style={{
                   background: '#ff6c37',
@@ -56,6 +44,18 @@ export class navbar extends Component {
                 }}
               >
                 تسجيل الدخول
+              </Button>
+              <Button
+                variant='outline-success'
+                className='singInBtn mr-sm-2 mr-1'
+                style={{
+                  background: '#FFFFFF',
+                  color: '#ff6c37',
+                  border: '1px solid #ff6c37',
+                  borderRadius: '7px',
+                }}
+              >
+                تسجيل
               </Button>
             </Form>
           </Navbar.Collapse>

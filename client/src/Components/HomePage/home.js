@@ -8,26 +8,25 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-
-// const responsive = {
-//   superLargeDesktop: {
-//     // the naming can be any, depends on you.
-//     breakpoint: { max: 4000, min: 3000 },
-//     items: 5,
-//   },
-//   desktop: {
-//     breakpoint: { max: 3000, min: 1024 },
-//     items: 3,
-//   },
-//   tablet: {
-//     breakpoint: { max: 1024, min: 464 },
-//     items: 2,
-//   },
-//   mobile: {
-//     breakpoint: { max: 464, min: 0 },
-//     items: 1,
-//   },
-// };
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 6,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 //-----------------------------------------------------------------
 
@@ -61,6 +60,32 @@ var settings = {
   slidesToScroll: 1,
   initialSlide: 6,
   rtl: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow:6,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 export class home extends Component {
@@ -109,7 +134,7 @@ export class home extends Component {
                   المواصفات العالية
                 </h6>
               </div>
-              <Slider className='renderComady' {...settings}>
+              <Slider className='renderComady' {...settings} {...responsive}>
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 4.png' className='imgSlider' />
                 <img src='/assets/img/car 2.png' className='imgSlider' />

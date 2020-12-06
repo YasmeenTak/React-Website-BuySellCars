@@ -12,6 +12,26 @@
 }
 .titleSub {
   text-align: center;
+  color: #606060;
+}
+.descriptionDiv {
+  color: #606060;
+  /* font-size: 12px; */
+}
+
+.card-title {
+  font-size: large;
+}
+.model {
+  font-size: large;
+  color: #606060;
+}
+
+.favStar {
+  color: #ff2e0a;
+}
+
+.mainContainer {
 }
 /* .col-lg-6 {
   border: 1px solid black;

@@ -24,8 +24,8 @@ function App() {
       {/* <Login /> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
-      <CarDetails />
-      {/* <SpecialCars /> */}
+      {/* <CarDetails /> */}
+      <SpecialCars />
       {/* <Footer /> */}
     </div>
   );

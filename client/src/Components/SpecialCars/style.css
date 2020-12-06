@@ -3,6 +3,16 @@
   justify-content: space-between;
 }
 
+.titleDiv {
+  margin-top: 40px;
+}
+.titleMain {
+  text-align: center;
+  font-style: normal;
+}
+.titleSub {
+  text-align: center;
+}
 /* .col-lg-6 {
   border: 1px solid black;
 } */

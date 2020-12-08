@@ -1,8 +1,38 @@
-/* .container {
-} */
+.mainContainer {
+  margin-bottom: 50px;
+}
 
+.detailsDiv {
+  border-radius: 25px;
+  margin: 20px;
+}
 
+.leftDetailsDiv {
+  /* border: 1px solid gray; */
+  padding-right: 50px;
+}
 
+.releaseYear {
+  color: #818181;
+}
+.priceCar {
+  color: #ff6c37;
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.a {
+  color: white;
+  background-color: #707070;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.backBtn {
+  font-size: 14px;
+  float: top;
+}
 .single-product .col-6 img {
   padding: 0;
 }
@@ -22,4 +52,9 @@
   cursor: pointer;
 }
 
-
+li {
+  color: #f8b334;
+} /* bullet */
+li span {
+  color: black;
+} /* text */

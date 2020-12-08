@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
 }
-
+.cardCars {
+  /* border: none; */
+}
 .titleDiv {
   margin-top: 40px;
 }
@@ -12,10 +14,10 @@
 }
 .titleSub {
   text-align: center;
-  color: #606060;
+  color: #818181;
 }
 .descriptionDiv {
-  color: #606060;
+  color: #818181;
   /* font-size: 12px; */
 }
 
@@ -24,14 +26,16 @@
 }
 .model {
   font-size: large;
-  color: #606060;
+  color: #818181;
 }
 
 .favStar {
   color: #ff2e0a;
 }
 
-.mainContainer {
+.mainCard {
+  background-color: #fcfcfc;
+  border: none;
 }
 /* .col-lg-6 {
   border: 1px solid black;

@@ -26,7 +26,7 @@ export class SpecialCars extends Component {
             }}
             className='mainContainer '
           >
-            <Card className='shadow'>
+            <Card className='mainCard shadow'>
               <Row>
                 <Col lg={4} xs={12} md={4}>
                   <img

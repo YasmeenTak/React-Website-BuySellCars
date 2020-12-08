@@ -10,6 +10,9 @@ import CarDetails from './Components/CarDetails/CarDetails';
 
 import Footer from './Components/Footer/Footer';
 import SpecialCars from './Components/SpecialCars/SpecialCars';
+import OtherCars from './Components/OtherCars/OtherCars';
+import DealersCars from './Components/DealersCars/Dealers';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -24,8 +27,11 @@ function App() {
       {/* <Login /> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
-      {/* <CarDetails /> */}
-      <SpecialCars />
+      <CarDetails />
+      {/* <SpecialCars /> */}
+      {/* <OtherCars /> */}
+      {/* <DealersCars /> */}
+
       {/* <Footer /> */}
     </div>
   );

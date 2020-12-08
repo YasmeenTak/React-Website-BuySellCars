@@ -14,13 +14,13 @@ export class navbar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg='withe' expand='lg' className='shadow-sm'>
+        <Navbar bg='withe' expand='lg' className='shadow-sm '>
           <Navbar href='#home'>
             <img src='assets/img/logo.png' className='logoImg' />
           </Navbar>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='mr-auto'>
+            <Nav  className='mr-auto '>
               <Nav.Link href='#contactus' style={{ color: 'black' }}>
                 تواصل معنا
               </Nav.Link>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button } from 'react-bootstrap';
 import { faHeart as farFaHeart } from '@fortawesome/free-regular-svg-icons';
 
 import './style.css';
@@ -60,7 +61,7 @@ export class CarDetails extends Component {
           </div>
           {/* -------------------------------------------Details Start--------------------------------------------- */}
           <div className='col-lg-6 single-product leftDetailsDiv'>
-            <div>space</div>
+            <div></div>
             <div className='row' style={{ margin: '20px' }}>
               <div
                 className='col-sm releaseYear'
@@ -119,6 +120,27 @@ export class CarDetails extends Component {
                   </li>
                 </lu>
               </div>
+
+              <div class='row'>
+                <div class='col-sm'>#cars</div>
+                <div class='col-sm'>#براند</div>
+                <div class='col-sm'>#سيارات</div>
+              </div>
+
+              <Button
+                variant='primary'
+                type='submit'
+                style={{
+                  background: '#ff6c37',
+                  border: '1px solid #ff6c37',
+                  borderRadius: '12px',
+                  width: '160px',
+                  float: 'center',
+                  marginTop: '20px',
+                }}
+              >
+                حجز للشراء
+              </Button>
             </div>
           </div>
           {/* -------------------------------------------Details End--------------------------------------------- */}

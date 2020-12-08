@@ -77,10 +77,7 @@ export class CarDetails extends Component {
             <div className='row' style={{ margin: '10px' }}>
               <div className='col-sm' style={{ textAlign: 'right' }}>
                 <div className='col-sm'>
-                  <p
-                    className='card-titlse'
-                    // style={{ border: '1px solid black' }}
-                  >
+                  <p className='card-titlse'>
                     براند السيارة / <span className='model'>الموديل</span>
                   </p>
                 </div>
@@ -89,14 +86,22 @@ export class CarDetails extends Component {
                 <span className='priceCar'>$ 33,650.00</span>
               </div>
             </div>
-            <div>
+            {/* <div
+              className='row-sm'
+              style={{ border: '1px solid black', paddingRight: '40px' }}
+            >
               <p style={{ textAlign: 'right' }}>اسم البائع/المعرض</p>
+            </div> */}
+            <div style={{ textAlign: 'right', paddingRight: '40px' }}>
+              اسم البائع
             </div>
 
-            <div className='row'>
-              <div className='col-sm FinancialStatus a'>مدفوعة</div>
-              <div className='col-sm carType a'>أوتوماتيك</div>
-              <div className='col-sm carMileage a'>100 ميل</div>
+            <div className='row grayDetailsDiv'>
+              <div className='col-sm FinancialStatus grayDetailsGroup'>
+                مدفوعة
+              </div>
+              <div className='col-sm carType grayDetailsGroup'>أوتوماتيك</div>
+              <div className='col-sm carMileage grayDetailsGroup'>100 ميل</div>
             </div>
             <div>
               <p style={{ textAlign: 'right' }}>بحالة ممتازة</p>
@@ -121,10 +126,10 @@ export class CarDetails extends Component {
                 </lu>
               </div>
 
-              <div class='row'>
-                <div class='col-sm'>#cars</div>
-                <div class='col-sm'>#براند</div>
-                <div class='col-sm'>#سيارات</div>
+              <div className='row keywordsDiv'>
+                <div className='col-sm keywordsDiv'>#cars</div>
+                <div className='col-sm keywordsDiv'>#براند</div>
+                <div className='col-sm keywordsDiv'>#سيارات</div>
               </div>
 
               <Button

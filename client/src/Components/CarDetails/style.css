@@ -1,15 +1,21 @@
 .mainContainer {
+  margin-top: 20px;
   margin-bottom: 50px;
+  direction: rtl;
+  border-radius: 10px;
+
 }
 
 .detailsDiv {
   border-radius: 25px;
   margin: 20px;
 }
-
+.carImgSlider {
+  padding: 20px;
+}
 .leftDetailsDiv {
   /* border: 1px solid gray; */
-  padding-right: 50px;
+  padding: 40px;
 }
 
 .releaseYear {

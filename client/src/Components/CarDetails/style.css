@@ -13,7 +13,11 @@
   padding: 20px;
 }
 .leftDetailsDiv {
-  padding: 40px;
+  padding: 60px;
+}
+
+.firstRow {
+  margin-bottom: 15px;
 }
 
 .releaseYear {
@@ -41,21 +45,15 @@
   padding: 0;
 }
 
-.single-product .col-6 {
-  padding: 20px;
-}
-
 .small-img-row {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-
 .small-img-col {
   flex-basis: 24%;
   cursor: pointer;
 }
-
 .grayDetailsDiv {
   margin: 20px;
 }
@@ -66,13 +64,15 @@ li span {
   color: black;
 } /* text */
 
-.keywordsDiv {
+.keywords {
   margin-top: 20px;
-}
-.grayDetailsGroup {
-  color: #ff6c37;
+  color: #ff470b;
   background-color: #fff3cd;
-  padding: 10px;
+  padding: 1px;
   border-radius: 5px;
   margin: 5px;
+  margin-top: 25px;
+}
+.modelCar {
+  color: #818181;
 }

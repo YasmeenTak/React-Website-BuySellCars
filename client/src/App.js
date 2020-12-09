@@ -16,6 +16,9 @@ import SpecialCars from './Components/SpecialCars/SpecialCars';
 import OtherCars from './Components/OtherCars/OtherCars';
 import DealersCars from './Components/DealersCars/Dealers';
 
+import MySales from './Components/MySales/MySales';
+import MyPurchases from './Components/MyPurchases/MyPurchases';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -23,11 +26,11 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-      <StaticLine />
+      {/* <StaticLine /> */}
       <NavBar />
       {/* <Head /> */}
-      {/* <Home /> */}
-      <AboutUS />
+      <Home />
+      {/* <AboutUS /> */}
       {/* <ContactUs /> */}
       {/* <Login /> */}
       {/* <Registration /> */}
@@ -36,7 +39,8 @@ function App() {
       {/* <SpecialCars /> */}
       {/* <OtherCars /> */}
       {/* <DealersCars /> */}
-
+      {/* <MyPurchases /> */}
+      {/* <MySales /> */}
       {/* <Footer /> */}
     </div>
   );

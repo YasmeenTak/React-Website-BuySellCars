@@ -1,0 +1,26 @@
+#groupBtn {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.w3-btn {
+  width: 28%;
+  height: 65px;
+  margin-bottom: 50px;
+  border: none;
+  color: white;
+}
+
+#otherCarsBtn {
+  border-radius: 0;
+}
+
+#purchasesBtn {
+  border-radius: 12px 0 0 12px;
+  color: #9f9f9f;
+}
+
+#salesCarsBtn {
+  border-radius: 0 12px 12px 0;
+  background-color: #ff6c37;
+}

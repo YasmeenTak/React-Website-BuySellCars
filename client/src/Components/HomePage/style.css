@@ -52,3 +52,21 @@
   color: #818181;
   font-weight: normal;
 }
+
+.slick-prev:before {
+  color: #ff6c37;
+  font-size: 20px;
+  position: relative;
+  left: 15px;
+}
+
+.slick-next:before {
+  color: #ff6c37;
+  font-size: 20px;
+  position: relative;
+  right: 15px;
+}
+
+.renderComady {
+  padding: 10px;
+}

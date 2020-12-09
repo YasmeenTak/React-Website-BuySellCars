@@ -3,6 +3,9 @@ import Home from './Components/HomePage/home';
 import StaticLine from './Components/StaticLine/staticLine';
 import NavBar from './Components/NavBar/navbar';
 import Head from './Components/Head/Head';
+import AboutUS from './Components/AboutUS/AboutUs';
+import ContactUs from './Components/ContactUs/ContactUs';
+
 import Registration from './Components/Registration/registration';
 import Login from './Components/Login/Login';
 import AddAds from './Components/AddCarAds/AddAds';
@@ -24,10 +27,12 @@ function App() {
       <NavBar />
       {/* <Head /> */}
       {/* <Home /> */}
+      <AboutUS />
+      {/* <ContactUs /> */}
       {/* <Login /> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
-      <CarDetails />
+      {/* <CarDetails /> */}
       {/* <SpecialCars /> */}
       {/* <OtherCars /> */}
       {/* <DealersCars /> */}

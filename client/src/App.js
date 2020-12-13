@@ -21,7 +21,8 @@ import MyPurchases from './Components/MyPurchases/MyPurchases';
 
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import ValidationCode from './Components/ValidationCode/ValidationCode';
-
+import ChangePassword from './Components/ChangePassword/ChangePassword';
+import ResetPassword from './Components/ResetPassword/ResetPassword';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -48,7 +49,8 @@ function App() {
 
       {/* <ChangePassword /> */}
       {/* <ForgotPassword /> */}
-      <ValidationCode />
+      <ResetPassword />
+      {/* <ValidationCode /> */}
 
       {/* <Footer /> */}
     </div>

@@ -19,6 +19,8 @@ import DealersCars from './Components/DealersCars/Dealers';
 import MySales from './Components/MySales/MySales';
 import MyPurchases from './Components/MyPurchases/MyPurchases';
 
+import ChangePassword from './Components/ChangePassword/ChangePassword';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -27,9 +29,9 @@ function App() {
   return (
     <div className='App'>
       {/* <StaticLine /> */}
-      <NavBar />
+      {/* <NavBar /> */}
       {/* <Head /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <AboutUS /> */}
       {/* <ContactUs /> */}
       {/* <Login /> */}
@@ -41,6 +43,8 @@ function App() {
       {/* <DealersCars /> */}
       {/* <MyPurchases /> */}
       {/* <MySales /> */}
+
+      <ChangePassword />
       {/* <Footer /> */}
     </div>
   );

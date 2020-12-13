@@ -47,9 +47,9 @@ function App() {
       {/* <MyPurchases /> */}
       {/* <MySales /> */}
 
-      {/* <ChangePassword /> */}
+      <ChangePassword />
       {/* <ForgotPassword /> */}
-      <ResetPassword />
+      {/* <ResetPassword /> */}
       {/* <ValidationCode /> */}
 
       {/* <Footer /> */}

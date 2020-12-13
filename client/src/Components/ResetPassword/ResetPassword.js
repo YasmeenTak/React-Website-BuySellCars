@@ -57,10 +57,9 @@ export class ResetPassword extends Component {
                 background: '#ff6c37',
                 border: '1px solid #ff6c37',
                 borderRadius: '12px',
-                marginBottom: '50px',
+                marginBottom: '20px',
                 width: '170px',
-                marginTop: '30px',
-                marginButtom: '10px',
+                marginTop: '20px',
               }}
             >
               إرسال

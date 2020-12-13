@@ -1,0 +1,51 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.logoCP {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.logoCP > img {
+  margin: auto;
+}
+
+.cardCP {
+  border-radius: 15px;
+  margin: auto;
+  width: 450px;
+  padding: 20px;
+  padding-right: 40px;
+}
+
+.emailCP {
+  float: right;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.emailCP:focus {
+  box-shadow: 0 0 2pt 2pt #818181;
+}
+
+.titleCP {
+  margin-top: 40px;
+}
+
+.last3Div {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.last3Div > a {
+  margin: 30px;
+  color: #818181;
+}
+
+.btnSend:focus {
+  /* box-shadow: 0 0 0 0.2rem #818181 !important ; */
+  box-shadow: none;
+  /* outline: none; */
+}

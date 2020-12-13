@@ -19,7 +19,9 @@ import DealersCars from './Components/DealersCars/Dealers';
 import MySales from './Components/MySales/MySales';
 import MyPurchases from './Components/MyPurchases/MyPurchases';
 
-import ChangePassword from './Components/ChangePassword/ChangePassword';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import ValidationCode from './Components/ValidationCode/ValidationCode';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -44,7 +46,10 @@ function App() {
       {/* <MyPurchases /> */}
       {/* <MySales /> */}
 
-      <ChangePassword />
+      {/* <ChangePassword /> */}
+      {/* <ForgotPassword /> */}
+      <ValidationCode />
+
       {/* <Footer /> */}
     </div>
   );

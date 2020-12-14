@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'react-bootstrap';
 import { faHeart as farFaHeart } from '@fortawesome/free-regular-svg-icons';
+import swal from 'sweetalert';
 
 import './style.css';
 
 export class CarDetails extends Component {
+  handleClick() {
+    swal({
+      text: 'تم استقبال الطلب, سنتواصل معك في أقرب فرصة',
+      icon: 'success',
+      button: 'العودة إلى الصفحة الرئيسية',
+    });
+  }
   // border: '1px solid black'
   // style={{ border: '1px solid black'}}
   render() {
@@ -133,6 +141,7 @@ export class CarDetails extends Component {
 
               <Button
                 variant='primary'
+                onClick={this.handleClick}
                 type='submit'
                 style={{
                   background: '#ff6c37',

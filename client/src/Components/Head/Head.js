@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortAmountDownAlt } from '@fortawesome/free-solid-svg-icons';
-import { InputGroup, Button, FormControl } from 'react-bootstrap';
+import { InputGroup, Button, FormControl, FormCheck } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class Head extends Component {
@@ -36,6 +36,8 @@ export class Head extends Component {
                 <Button
                   variant='outline-secondary'
                   style={{ backgroundColor: '#ff6c37', color: 'white' }}
+                  data-toggle='modal'
+                  data-target='.bd-example-modal-lg'
                 >
                   {/* <img
                     src='/assets/fontello/font/icons.svg'
@@ -50,6 +52,59 @@ export class Head extends Component {
                 placeholder='ابحث هنا'
               />
             </InputGroup>
+
+            {/* <!------------------------------ Modal ------------------------> */}
+            <div
+              className='modal fade bd-example-modal-lg'
+              tabIndex='-1'
+              role='dialog'
+              aria-labelledby='myLargeModalLabel'
+              aria-hidden='true'
+              style={{ direction: 'rtl' }}
+            >
+              <div className='modal-dialog modal-lg'>
+                <div className='modal-content'>
+                  <div className='modal-header'>
+                    <button
+                      type='button'
+                      class='close order-1'
+                      data-dismiss='modal'
+                      aria-label='Close'
+                    >
+                      <span aria-hidden='true'>&times;</span>
+                    </button>
+                  </div>
+                  <div className='modal-body' id='modalBody'>
+                    <p>البراند</p>
+                    <select className='form-control selectFilter' style={{}}>
+                      <option>براند السيارة</option>
+                    </select>
+                    <select className='form-control selectFilter'>
+                      <option>الموديل</option>
+                    </select>
+                    <p>
+                      __________________________________________________________
+                    </p>
+                    {/* -------------------------------------------------------- */}
+
+                    {/* -------------------------------------------------------------- */}
+                  </div>
+                  <div className='modal-footer'>
+                    <button
+                      type='button'
+                      className='btn btn-secondary'
+                      data-dismiss='modal'
+                    >
+                      Close
+                    </button>
+                    <button type='button' className='btn btn-primary'>
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* <!------------------------------ Modal ------------------------> */}
 
             <div className='appButton'>
               <a href='https://play.google.com/store' target='_blank'>

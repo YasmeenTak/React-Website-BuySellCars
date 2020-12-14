@@ -19,6 +19,7 @@ import DealersCars from './Components/DealersCars/Dealers';
 import MySales from './Components/MySales/MySales';
 import MyPurchases from './Components/MyPurchases/MyPurchases';
 
+import UserProfile from './Components/UserProfile/UserProfile';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import ValidationCode from './Components/ValidationCode/ValidationCode';
 import ChangePassword from './Components/ChangePassword/ChangePassword';
@@ -32,7 +33,7 @@ function App() {
   return (
     <div className='App'>
       {/* <StaticLine /> */}
-      {/* <NavBar /> */}
+      <NavBar />
       {/* <Head /> */}
       {/* <Home /> */}
       {/* <AboutUS /> */}
@@ -47,7 +48,8 @@ function App() {
       {/* <MyPurchases /> */}
       {/* <MySales /> */}
 
-      <ChangePassword />
+      <UserProfile />
+      {/* <ChangePassword /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
       {/* <ValidationCode /> */}

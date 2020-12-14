@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+
 import './style.css';
 
 export class UserProfile extends Component {
@@ -26,6 +29,34 @@ export class UserProfile extends Component {
         </div>
 
         {/* ------------------------------------------------- */}
+
+        <div
+          className='container  personalInfoDiv shadow'
+          style={{ direction: 'rtl' }}
+        >
+          <div className='row addressUserDiv'>
+            <div className='col addressUser'>
+              <FontAwesomeIcon
+                icon={faMapMarkerAlt}
+                className='iconUser faMapMarkerAlt'
+              />
+              <p>العنوان</p>
+            </div>
+            <div className='col editDeleteBtnDiv'>تعديل</div>
+          </div>
+          <div className='row regionUserDiv'>
+            <div className='col regionUser'>المحافظة</div>
+            <div className='col editDeleteBtnDiv'>تعديل</div>
+          </div>
+          <div className='row phoneNoUserDiv'>
+            <div className='col phoneNoUser'>رقم الهاتف</div>
+            <div className='col editDeleteBtnDiv'>تعديل</div>
+          </div>
+          <div className='row emailUserDiv'>
+            <div className='col emailUser'>الايميل</div>
+            <div className='col editDeleteBtnDiv'>تعديل</div>
+          </div>
+        </div>
       </div>
     );
   }

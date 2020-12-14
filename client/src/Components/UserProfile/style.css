@@ -28,3 +28,42 @@
 .userBio {
   text-align: center;
 }
+
+.personalInfoDiv {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 70%;
+  border: 1px solid #818181;
+  padding: 20px;
+}
+
+.addressUserDiv,
+.regionUserDiv,
+.phoneNoUserDiv,
+.emailUserDiv {
+  display: flex;
+  margin: 10px;
+  border: 1px solid blue;
+
+}
+.editDeleteBtnDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 50px;
+}
+.addressUser,
+.regionUser,
+.phoneNoUser,
+.emailUser {
+  display: flex;
+  flex-direction: reverse;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.iconUser {
+  margin-left: 30px;
+  margin-top: 5px;
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.321" height="27.913" viewBox="0 0 25.321 27.913">
+  <g id="notifications" transform="translate(-1596 -36)">
+    <g id="_02" data-name="02" transform="translate(1597 38)">
+      <g id="Icon-Notification" transform="translate(0)">
+        <g id="Icon-Notification-2" data-name="Icon-Notification" transform="translate(0)">
+          <g id="Group_1" data-name="Group 1">
+            <path id="Path_1" data-name="Path 1" d="M309.5,404.229a2.52,2.52,0,0,0,2.536-2.493h-5.079a2.525,2.525,0,0,0,2.543,2.493Zm8.254-7.475V389.9a8.042,8.042,0,0,0-6.351-7.845v-.877a1.9,1.9,0,0,0-3.806,0v.877a8.042,8.042,0,0,0-6.351,7.845v6.849l-2.543,2.494v1.246H320.3v-1.246Zm0,0" transform="translate(-298.703 -379.315)" fill="none" stroke="#292929" stroke-width="2"/>
+          </g>
+        </g>
+        <path id="Color_Overlay" data-name="Color Overlay" d="M8.15,22.5h5.015a2.508,2.508,0,0,1-5.015,0ZM0,21.253V20l2.511-2.5V10.627A8.041,8.041,0,0,1,8.783,2.754V1.874a1.879,1.879,0,0,1,3.757,0v.879a8.041,8.041,0,0,1,6.27,7.873V17.5L21.321,20v1.251Z" transform="translate(0 0)" fill="none" stroke="#292929" stroke-width="1"/>
+      </g>
+      <g id="Circle" transform="translate(13.321 0)" fill="#f8b334" stroke="#f0f0f0" stroke-linejoin="round" stroke-width="2">
+        <ellipse cx="4.5" cy="5" rx="4.5" ry="5" stroke="none"/>
+        <ellipse cx="4.5" cy="5" rx="5.5" ry="6" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg id="star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Shape" d="M21.274,26.872,14,23.009,6.728,26.872a1.275,1.275,0,0,1-1.846-1.355L6.27,17.339.386,11.551a1.29,1.29,0,0,1,.7-2.193l8.133-1.2L12.859.716a1.268,1.268,0,0,1,2.283,0l3.637,7.442,8.133,1.2a1.29,1.29,0,0,1,.7,2.193l-5.884,5.788,1.388,8.178a1.284,1.284,0,0,1-1.254,1.505A1.255,1.255,0,0,1,21.274,26.872Z" transform="translate(0 0)" fill="none" stroke="#ff2e0a" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="Group_222" data-name="Group 222" transform="translate(1 1)">
+    <path id="Shape-2" data-name="Shape" d="M21.274,26.872,14,23.009,6.728,26.872a1.275,1.275,0,0,1-1.846-1.355L6.27,17.339.386,11.551a1.29,1.29,0,0,1,.7-2.193l8.133-1.2L12.859.716a1.268,1.268,0,0,1,2.283,0l3.637,7.442,8.133,1.2a1.29,1.29,0,0,1,.7,2.193l-5.884,5.788,1.388,8.178a1.284,1.284,0,0,1-1.254,1.505A1.255,1.255,0,0,1,21.274,26.872Z" transform="translate(0 0)" fill="none" stroke="#ff2e0a" stroke-width="1.5"/>
+    <g id="Mask_Group_222" data-name="Mask Group 222" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <g id="COLOR_black" data-name="COLOR/ black" transform="translate(-1.273 -1.286)">
+        <g id="Rectangle" transform="translate(0)" fill="none" stroke="#ff2e0a" stroke-miterlimit="10" stroke-width="1.5">
+          <rect width="30.545" height="30.85" stroke="none"/>
+          <rect x="0.75" y="0.75" width="29.045" height="29.35" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -34,8 +34,9 @@
   flex-direction: column;
   border-radius: 15px;
   width: 70%;
-  border: 1px solid #818181;
+  border: 0.5px solid #dadada;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .addressUserDiv,
@@ -44,8 +45,6 @@
 .emailUserDiv {
   display: flex;
   margin: 10px;
-  border: 1px solid blue;
-
 }
 .editDeleteBtnDiv {
   display: flex;
@@ -60,10 +59,14 @@
   flex-direction: reverse;
   padding-left: 50px;
   padding-right: 50px;
-
 }
 
 .iconUser {
   margin-left: 30px;
-  margin-top: 5px;
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 0.5px solid #dadada;
+  margin: 5px;
 }

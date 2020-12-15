@@ -1,0 +1,15 @@
+<svg id="mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M3.818,24A3.916,3.916,0,0,1,0,20V4.013C0,4,0,3.987,0,3.974A3.915,3.915,0,0,1,3.818,0H24.182A3.917,3.917,0,0,1,28,4V20a3.917,3.917,0,0,1-3.819,4ZM2.545,20a1.3,1.3,0,0,0,1.273,1.333H24.182A1.3,1.3,0,0,0,25.454,20V6.562L14.729,14.425a1.224,1.224,0,0,1-1.459,0L2.545,6.561ZM14,11.706,25.32,3.4a1.269,1.269,0,0,0-1.139-.738H3.818A1.269,1.269,0,0,0,2.679,3.4Z" transform="translate(0)" fill="#707070"/>
+    </clipPath>
+  </defs>
+  <g id="Group_97" data-name="Group 97" transform="translate(1 3)">
+    <path id="Combined_Shape-2" data-name="Combined Shape" d="M3.818,24A3.916,3.916,0,0,1,0,20V4.013C0,4,0,3.987,0,3.974A3.915,3.915,0,0,1,3.818,0H24.182A3.917,3.917,0,0,1,28,4V20a3.917,3.917,0,0,1-3.819,4ZM2.545,20a1.3,1.3,0,0,0,1.273,1.333H24.182A1.3,1.3,0,0,0,25.454,20V6.562L14.729,14.425a1.224,1.224,0,0,1-1.459,0L2.545,6.561ZM14,11.706,25.32,3.4a1.269,1.269,0,0,0-1.139-.738H3.818A1.269,1.269,0,0,0,2.679,3.4Z" transform="translate(0)" fill="#707070"/>
+    <g id="Mask_Group_97" data-name="Mask Group 97" clip-path="url(#clip-path)">
+      <g id="COLOR_black" data-name="COLOR/ black" transform="translate(-1.273 -4)">
+        <rect id="Rectangle" width="30.545" height="32" fill="#707070"/>
+      </g>
+    </g>
+  </g>
+</svg>

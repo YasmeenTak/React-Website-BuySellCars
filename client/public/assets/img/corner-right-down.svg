@@ -1,0 +1,15 @@
+<svg id="corner-right-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M15.051,23.6l-6.66-6.66a1.333,1.333,0,1,1,1.885-1.885l4.391,4.391V6.667a4,4,0,0,0-4-4H1.333A1.333,1.333,0,1,1,1.333,0h9.334a6.666,6.666,0,0,1,6.666,6.667V19.448l4.391-4.391a1.333,1.333,0,0,1,1.886,1.885L16.943,23.61a1.332,1.332,0,0,1-.362.257l-.008,0-.019.009-.014.006-.012.005-.022.009-.006,0a1.335,1.335,0,0,1-1.449-.3Z" fill="#9f9f9f"/>
+    </clipPath>
+  </defs>
+  <g id="Group_34" data-name="Group 34" transform="translate(3 3)">
+    <path id="Combined_Shape-2" data-name="Combined Shape" d="M15.051,23.6l-6.66-6.66a1.333,1.333,0,1,1,1.885-1.885l4.391,4.391V6.667a4,4,0,0,0-4-4H1.333A1.333,1.333,0,1,1,1.333,0h9.334a6.666,6.666,0,0,1,6.666,6.667V19.448l4.391-4.391a1.333,1.333,0,0,1,1.886,1.885L16.943,23.61a1.332,1.332,0,0,1-.362.257l-.008,0-.019.009-.014.006-.012.005-.022.009-.006,0a1.335,1.335,0,0,1-1.449-.3Z" fill="#9f9f9f"/>
+    <g id="Mask_Group_34" data-name="Mask Group 34" clip-path="url(#clip-path)">
+      <g id="_Color" data-name="🎨Color" transform="translate(-4 -4)">
+        <rect id="Rectangle" width="32" height="32" fill="#9f9f9f"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './Components/HomePage/home';
 import StaticLine from './Components/StaticLine/staticLine';
 import NavBar from './Components/NavBar/navbar';
@@ -34,9 +34,10 @@ function App() {
     <div className='App'>
       {/* <StaticLine /> */}
       <NavBar />
+
       {/* <Head /> */}
       {/* <Home /> */}
-      {/* <AboutUS /> */}
+      {/* <AboutUS path='/about' /> */}
       {/* <ContactUs /> */}
       {/* <Login /> */}
       {/* <Registration /> */}

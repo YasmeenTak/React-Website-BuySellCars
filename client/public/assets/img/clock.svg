@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Combined_Shape" data-name="Combined Shape" d="M4.1,23.9A14,14,0,1,1,23.9,4.1,14,14,0,1,1,4.1,23.9ZM2.545,14A11.455,11.455,0,1,0,14,2.545,11.468,11.468,0,0,0,2.545,14Zm14.373,4.718L13.1,14.9a1.27,1.27,0,0,1-.373-.9V6.364a1.273,1.273,0,1,1,2.545,0v7.109l3.446,3.446a1.272,1.272,0,1,1-1.8,1.8Z" transform="translate(0 0)" fill="#292929"/>
+    </clipPath>
+  </defs>
+  <g id="clock" opacity="0.6">
+    <g id="Group_167" data-name="Group 167" transform="translate(1 1)">
+      <path id="Combined_Shape-2" data-name="Combined Shape" d="M4.1,23.9A14,14,0,1,1,23.9,4.1,14,14,0,1,1,4.1,23.9ZM2.545,14A11.455,11.455,0,1,0,14,2.545,11.468,11.468,0,0,0,2.545,14Zm14.373,4.718L13.1,14.9a1.27,1.27,0,0,1-.373-.9V6.364a1.273,1.273,0,1,1,2.545,0v7.109l3.446,3.446a1.272,1.272,0,1,1-1.8,1.8Z" transform="translate(0 0)" fill="#292929"/>
+      <g id="Mask_Group_167" data-name="Mask Group 167" clip-path="url(#clip-path)">
+        <g id="COLOR_black" data-name="COLOR/ black" transform="translate(-1.273 -1.273)">
+          <rect id="Rectangle" width="40.727" height="40.727" fill="#292929"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

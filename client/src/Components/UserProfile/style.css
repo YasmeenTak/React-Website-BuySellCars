@@ -79,3 +79,6 @@ legend {
   border-bottom: 0.5px solid #dadada;
   margin: 5px;
 }
+.a {
+  grid-template-columns: 15px 20px 30px;
+}

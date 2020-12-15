@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import {
-  Nav,
-  Button,
-  Navbar,
-  FormControl,
-  Form,
-  NavDropdown,
-} from 'react-bootstrap';
+import { Nav, Button, Navbar, Form } from 'react-bootstrap';
 // import { Button } from '@material-ui/core';
 
 export class navbar extends Component {
@@ -20,7 +13,7 @@ export class navbar extends Component {
           </Navbar>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav  className='mr-auto '>
+            <Nav className='mr-auto '>
               <Nav.Link href='#contactus' style={{ color: 'black' }}>
                 تواصل معنا
               </Nav.Link>

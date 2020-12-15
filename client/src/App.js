@@ -28,12 +28,14 @@ import ResetPassword from './Components/ResetPassword/ResetPassword';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
+import NavbarlogIn from './Components/NavBar/NavbarlogIn';
 
 function App() {
   return (
     <div className='App'>
       {/* <StaticLine /> */}
       <NavBar />
+      {/* <NavbarlogIn /> */}
 
       {/* <Head /> */}
       {/* <Home /> */}

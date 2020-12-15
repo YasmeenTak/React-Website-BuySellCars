@@ -40,7 +40,7 @@ export class UserProfile extends Component {
           >
             <legend className=''>المعلومات الشخصية</legend>
 
-            <div className='row-lg-6 md-4 sm-2  pr-1 addressUserDiv'>
+            <div className='row-lg-6 md-4 sm-2  pr-3 addressUserDiv'>
               <div className='col addressUser'>
                 <p>
                   <FiMapPin className='iconUser' />
@@ -54,7 +54,7 @@ export class UserProfile extends Component {
 
             <span className='divider'></span>
 
-            <div className='row regionUserDiv'>
+            <div className='row-lg-6 md-4 sm-2  pr-3 regionUserDiv'>
               <div className='col regionUser'>
                 <p>
                   <FaWarehouse className='iconUser' />
@@ -67,7 +67,7 @@ export class UserProfile extends Component {
             </div>
             <span className='divider'></span>
 
-            <div className='row phoneNoUserDiv'>
+            <div className='row-lg-6 md-4 sm-2  pr-3 phoneNoUserDiv'>
               <div className='col phoneNoUser'>
                 <p>
                   <FiPhone className='iconUser' />
@@ -80,7 +80,7 @@ export class UserProfile extends Component {
             </div>
             <span className='divider'></span>
 
-            <div className='row emailUserDiv'>
+            <div className='row-lg-6 md-4 sm-2  pr-3 emailUserDiv'>
               <div className='col emailUser'>
                 <p>
                   <HiOutlineMail className='iconUser' />

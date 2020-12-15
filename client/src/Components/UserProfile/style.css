@@ -33,9 +33,20 @@
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  width: 70%;
+  width: 60%;
   border: 0.5px solid #dadada;
   padding: 20px;
+  margin-bottom: 50px;
+}
+legend {
+  position: relative;
+  top: 25px;
+  width: auto; /* Or auto */
+  padding: 0px 10px 20px 10px; /* To give a bit of padding on the left and right */
+  border: 1px solid #dadada;
+  border-top: none;
+  font-size: large;
+  /* margin-right: -250px; */
   margin-bottom: 50px;
 }
 
@@ -44,22 +55,21 @@
 .phoneNoUserDiv,
 .emailUserDiv {
   display: flex;
+  flex-direction: reverse;
   margin: 10px;
+  padding-right: 50px;
 }
 .editDeleteBtnDiv {
   display: flex;
   flex-direction: row-reverse;
   padding-left: 50px;
 }
-.addressUser,
+/* .addressUser,
 .regionUser,
 .phoneNoUser,
 .emailUser {
-  display: flex;
-  flex-direction: reverse;
-  padding-left: 50px;
-  padding-right: 50px;
-}
+
+} */
 
 .iconUser {
   margin-left: 30px;

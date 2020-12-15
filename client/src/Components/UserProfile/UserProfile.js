@@ -25,7 +25,8 @@ export class UserProfile extends Component {
           <h5 className='userName'>اسم المستخدم</h5>
           <p className='userBio'>
             نبذة تعريفية نبذة تعريفية نبذة تعريفية نبذة تعريفية نبذة تعريفية
-            نبذة تعريفية نبذة تعريفية نبذة تعريفية <br />
+            نبذة تعريفية نبذة تعريفية
+            <br />
             نبذة تعريفية نبذة تعريفية نبذة تعريفية نبذة تعريفية نبذة تعريفية
             نبذة تعريفية نبذة تعريفية
           </p>
@@ -33,11 +34,13 @@ export class UserProfile extends Component {
 
         {/* ------------------------------------------------- */}
         <IconContext.Provider value={{ size: '1.3em' }}>
-          <div
+          <fieldset
             className='container  personalInfoDiv shadow fieldset'
             style={{ direction: 'rtl' }}
           >
-            <div className='row addressUserDiv'>
+            <legend className=''>المعلومات الشخصية</legend>
+
+            <div className='row-lg-6 md-4 sm-2  pr-1 addressUserDiv'>
               <div className='col addressUser'>
                 <p>
                   <FiMapPin className='iconUser' />
@@ -49,7 +52,7 @@ export class UserProfile extends Component {
               </div>
             </div>
 
-            <span class='divider'></span>
+            <span className='divider'></span>
 
             <div className='row regionUserDiv'>
               <div className='col regionUser'>
@@ -62,7 +65,7 @@ export class UserProfile extends Component {
                 <FaEdit className='editIcon' />
               </div>
             </div>
-            <span class='divider'></span>
+            <span className='divider'></span>
 
             <div className='row phoneNoUserDiv'>
               <div className='col phoneNoUser'>
@@ -75,7 +78,7 @@ export class UserProfile extends Component {
                 <FaEdit className='editIcon' />
               </div>
             </div>
-            <span class='divider'></span>
+            <span className='divider'></span>
 
             <div className='row emailUserDiv'>
               <div className='col emailUser'>
@@ -88,7 +91,7 @@ export class UserProfile extends Component {
                 <FaEdit className='editIcon' />
               </div>
             </div>
-          </div>
+          </fieldset>
         </IconContext.Provider>
         {/* ------------------------------------------------- */}
       </div>

@@ -94,16 +94,16 @@ export class UserProfile extends Component {
           </fieldset>
         </IconContext.Provider>
         {/* ------------------------------------------------- */}
-        <div className='container'>
+        {/* <div className='container'>
           <div>
             <p className='a'>yasmeen</p>
             <p className='a'>icon</p>
             <p className='a'>edit</p>
           </div>
           <p>talal</p>
-          <p>malal</p>
+          <p>malak</p>
           <p>jazar</p>
-        </div>
+        </div> */}
       </div>
     );
   }

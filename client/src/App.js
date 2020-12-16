@@ -40,7 +40,7 @@ function App() {
       {/* <Head /> */}
       {/* <Home /> */}
       {/* <AboutUS path='/about' /> */}
-      {/* <ContactUs /> */}
+      <ContactUs />
       {/* <Login /> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
@@ -51,7 +51,7 @@ function App() {
       {/* <MyPurchases /> */}
       {/* <MySales /> */}
 
-      <UserProfile />
+      {/* <UserProfile /> */}
       {/* <ChangePassword /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { IconContext } from 'react-icons';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FiMapPin } from 'react-icons/fi';
-import { FaFax } from 'react-icons/fa';
+import { FaFax, FaUserTie } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { ImPhone } from 'react-icons/im';
 
@@ -27,13 +28,30 @@ export class ContactUs extends Component {
             <p className='titleCU'>تواصل معنا</p>
           </div>
           <div className='row'>
-            <div className='col-lg-6' style={{ border: '1px solid black' }}>
-              <input type='text' />
-              <input type='text' />
-              <input type='text' />
-              <button style={{ display: 'flex', margin: 'auto' }}>ok</button>
+            <div className='col-lg-6'>
+              <form>
+                <div className='inputCUDiv'>
+                  <input
+                    type='text'
+                    placeholder='الاسم كاملاً'
+                    className='form-control inputCU shadow'
+                  />
+                </div>
+                <input
+                  type='text'
+                  placeholder='البريد الإلكتروني'
+                  className='form-control inputCU shadow '
+                />
+                <input
+                  type='text'
+                  placeholder='نص الرسالة'
+                  className='form-control inputCU shadow'
+                  style={{ paddingBottom: '150px', paddingTop: '30px' }}
+                />
+              </form>
             </div>
-            <div className='col-lg-6' style={{ border: '1px solid black' }}>
+
+            <div className='col-lg-6'>
               <img src='assets/img/map.jpg' alt='map' className='mapCU' />
 
               <div class='row contactUsInfo'>

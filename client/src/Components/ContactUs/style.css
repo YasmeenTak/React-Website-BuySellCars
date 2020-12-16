@@ -33,3 +33,21 @@
 .cuIcon {
   margin-left: 5px;
 }
+.inputCU {
+  margin: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+  height: 55px;
+}
+
+/* .inputCUDiv {
+  position: relative;
+} */
+
+.i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px 0 15px;
+  color: black;
+}

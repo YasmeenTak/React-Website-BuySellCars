@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import { IconContext } from 'react-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+// import { IconContext } from 'react-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FiMapPin } from 'react-icons/fi';
 import { FaFax, FaUserTie } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { ImPhone } from 'react-icons/im';
+import { Button } from 'react-bootstrap';
+import Footer from '../Footer/Footer';
 
 import './style.css';
 
@@ -36,19 +38,44 @@ export class ContactUs extends Component {
                     placeholder='الاسم كاملاً'
                     className='form-control inputCU shadow'
                   />
+                  <i className='i icon-icon'></i>
                 </div>
-                <input
-                  type='text'
-                  placeholder='البريد الإلكتروني'
-                  className='form-control inputCU shadow '
-                />
-                <input
-                  type='text'
-                  placeholder='نص الرسالة'
-                  className='form-control inputCU shadow'
-                  style={{ paddingBottom: '150px', paddingTop: '30px' }}
-                />
+                <div className='inputCUDiv'>
+                  <input
+                    type='text'
+                    placeholder='البريد الإلكتروني'
+                    className='form-control inputCU shadow '
+                  />
+                  <i className='i icon-mail'></i>
+                </div>
+
+                <div>
+                  <div className='inputCUDiv'>
+                    <input
+                      type='text'
+                      placeholder='نص الرسالة'
+                      className='form-control inputCU shadow'
+                      style={{ paddingBottom: '150px', paddingTop: '30px' }}
+                    />
+                    {/* <i className='i icon-icon'></i> */}
+                  </div>
+                </div>
               </form>
+              <Button
+                className='btnSend'
+                variant='primary'
+                type='submit'
+                style={{
+                  background: '#ff6c37',
+                  border: '1px solid #ff6c37',
+                  borderRadius: '12px',
+                  marginBottom: '30px',
+                  width: '170px',
+                  marginTop: '10px',
+                }}
+              >
+                إرسال
+              </Button>
             </div>
 
             <div className='col-lg-6'>
@@ -84,6 +111,7 @@ export class ContactUs extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

@@ -25,10 +25,12 @@ import ValidationCode from './Components/ValidationCode/ValidationCode';
 import ChangePassword from './Components/ChangePassword/ChangePassword';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
 
+import NavbarlogIn from './Components/NavBar/NavbarlogIn';
+import Settings from './Components/Settings/Settings';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
-import NavbarlogIn from './Components/NavBar/NavbarlogIn';
 
 function App() {
   return (
@@ -40,7 +42,7 @@ function App() {
       {/* <Head /> */}
       {/* <Home /> */}
       {/* <AboutUS path='/about' /> */}
-      <ContactUs />
+      {/* <ContactUs /> */}
       {/* <Login /> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
@@ -56,6 +58,7 @@ function App() {
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
       {/* <ValidationCode /> */}
+      <Settings path='/settings' />
 
       {/* <Footer /> */}
     </div>

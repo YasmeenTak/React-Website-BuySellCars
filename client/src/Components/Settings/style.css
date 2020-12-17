@@ -1,0 +1,17 @@
+.settingsCont {
+  margin-top: 40px;
+  width: 65%;
+  margin-bottom: 80px;
+}
+.settingsCont .row {
+  margin: 20px;
+}
+.settingWord {
+  display: flex;
+  flex-direction: row;
+}
+
+.settingIcon {
+  display: flex;
+  flex-direction: row-reverse;
+}

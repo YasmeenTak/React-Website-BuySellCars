@@ -36,14 +36,14 @@ function App() {
   return (
     <div className='App'>
       {/* <StaticLine /> */}
-      <NavBar />
-      {/* <NavbarlogIn /> */}
+      {/* <NavBar /> */}
+      <NavbarlogIn />
 
       {/* <Head /> */}
       {/* <Home /> */}
       {/* <AboutUS path='/about' /> */}
-      {/* <ContactUs /> */}
-      {/* <Login /> */}
+      {/* <ContactUs path='/contact us'/> */}
+      {/* <Login path='/login'/> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
       {/* <CarDetails /> */}
@@ -54,11 +54,11 @@ function App() {
       {/* <MySales /> */}
 
       {/* <UserProfile /> */}
-      {/* <ChangePassword /> */}
+      {/* <ChangePassword path='/change password' /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
       {/* <ValidationCode /> */}
-      <Settings path='/settings' />
+      {/* <Settings path='/settings' /> */}
 
       {/* <Footer /> */}
     </div>

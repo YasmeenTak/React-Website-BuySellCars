@@ -1,96 +1,90 @@
 import React, { Component } from 'react';
+import { AiOutlineHome } from 'react-icons/ai';
 import './styleLogin.css';
 
 export class NavbarlogIn extends Component {
   render() {
     return (
-      <div>
-        <nav class='navbar navbar-expand-lg navbar-light bg-light'>
-          <div class='container-fluid'>
-            <a class='navbar-brand' href='#'>
-              Navbar
-            </a>
-            <button
-              class='navbar-toggler'
-              type='button'
-              data-bs-toggle='collapse'
-              data-bs-target='#navbarSupportedContent'
-              aria-controls='navbarSupportedContent'
-              aria-expanded='false'
-              aria-label='Toggle navigation'
-            >
-              <span class='navbar-toggler-icon'></span>
-            </button>
-            <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-              <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
-                <li class='nav-item'>
-                  <a class='nav-link active' aria-current='page' href='#'>
-                    Home
-                  </a>
-                </li>
-                <li class='nav-item'>
-                  <a class='nav-link' href='#'>
-                    Link
-                  </a>
-                </li>
-                <li class='nav-item dropdown'>
-                  <a
-                    class='nav-link dropdown-toggle'
-                    href='#'
-                    id='navbarDropdown'
-                    role='button'
-                    data-bs-toggle='dropdown'
-                    aria-expanded='false'
-                  >
-                    Dropdown
-                  </a>
-                  <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
-                    <li>
-                      <a class='dropdown-item' href='#'>
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a class='dropdown-item' href='#'>
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <hr class='dropdown-divider' />
-                    </li>
-                    <li>
-                      <a class='dropdown-item' href='#'>
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class='nav-item'>
-                  <a
-                    class='nav-link disabled'
-                    href='#'
-                    tabIndex='-1'
-                    aria-disabled='true'
-                  >
-                    Disabled
-                  </a>
-                </li>
-              </ul>
-              <form class='d-flex'>
-                <input
-                  class='form-control me-2'
-                  type='search'
-                  placeholder='Search'
-                  aria-label='Search'
-                />
-                <button class='btn btn-outline-success' type='submit'>
-                  Search
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </div>
+      <nav class='navbar navbar-expand-lg navbar-light bg-light shadow-sm'>
+        <a class='navbar-brand' href='#'>
+          <img src='assets/img/logo.png' className='logoImg' />
+        </a>
+        <button
+          class='navbar-toggler'
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarSupportedContent'
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span class='navbar-toggler-icon'></span>
+        </button>
+
+        <div
+          class='collapse navbar-collapse  justify-content-between'
+          id='navbarSupportedContent'
+        >
+          <ul class='navbar-nav mr-auto'>
+            <li class='nav-item active'>
+              <a class='nav-link' href='#'>
+                <AiOutlineHome size='1.3em' style={{ marginTop: '20px' }} />
+                الرئيسة <span class='sr-only'>(current)</span>
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' href='#'>
+                <i className='icon-notifications'></i>
+                الإشعارات
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a class='nav-link' href='#'>
+                معرضي
+              </a>
+            </li>
+            <button>إعلان جديد </button>
+
+            <li class='nav-item dropdown'>
+              <a
+                class='nav-link dropdown-toggle'
+                href='#'
+                id='navbarDropdown'
+                role='button'
+                data-toggle='dropdown'
+                aria-haspopup='true'
+                aria-expanded='false'
+              >
+                المزيد
+              </a>
+              <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                <a class='dropdown-item' href='#'>
+                  المفضلة
+                </a>
+                <a class='dropdown-item' href='#'>
+                  من نحن؟
+                </a>
+                <a class='dropdown-item' href='#'>
+                  تواصل معنا
+                </a>
+                <a class='dropdown-item' href='#'>
+                  سياسة الخصوصية
+                </a>
+                <a class='dropdown-item' href='#'>
+                  شروط الاستخدام
+                </a>
+              </div>
+            </li>
+          </ul>
+          <form class='form-inline my-2 my-lg-0'>
+            <img
+              src='assets/img/profileImg.jpg'
+              alt='Avatar'
+              className='userImgNav img-responsive'
+            />
+          </form>
+        </div>
+      </nav>
     );
   }
 }

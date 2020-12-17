@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BsToggleOn } from 'react-icons/bs';
 import { RiLockPasswordLine } from 'react-icons/ri';
+import { Link, Redirect, Route, Router } from 'react-router-dom';
 
 import Footer from '../Footer/Footer';
 import './style.css';
@@ -32,7 +33,10 @@ export class Settings extends Component {
           <span className='divider'></span>
 
           <div className='row'>
-            <div className='col settingWord'>تغيير كلمة المرور</div>
+            <div className='col settingWord'>
+              {/* <Link to='/change password'></Link> */}
+              <a href='/change password'>تغيير كلمة المرور </a>
+            </div>
             <div className='col settingIcon' style={{ paddingLeft: '30px' }}>
               <RiLockPasswordLine style={{ fontSize: '1.5em' }} />
             </div>

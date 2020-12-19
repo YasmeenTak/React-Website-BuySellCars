@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
+import { FaCars} from 'react-icons/fa';
 
 import './styleLogin.css';
 
@@ -52,6 +53,14 @@ export class NavbarlogIn extends Component {
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='#'>
+                <FaCars
+                  className='icon-icon-awesome-car'
+                  style={{
+                    marginBottom: '5px',
+                    marginLeft: '5px',
+                    color: 'black',
+                  }}
+                />
                 معرضي
               </a>
             </li>

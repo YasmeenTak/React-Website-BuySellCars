@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
-import { FaCars} from 'react-icons/fa';
+import { BiCar } from 'react-icons/bi';
+import { Button } from 'react-bootstrap';
 
 import './styleLogin.css';
 
@@ -53,20 +54,30 @@ export class NavbarlogIn extends Component {
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='#'>
-                <FaCars
-                  className='icon-icon-awesome-car'
+                <BiCar
+                  size='1.3em'
                   style={{
                     marginBottom: '5px',
                     marginLeft: '5px',
-                    color: 'black',
                   }}
                 />
                 معرضي
               </a>
             </li>
-            <button>إعلان جديد </button>
-
-            <li class='nav-item dropdown'>
+            <Button
+              variant='outline-success'
+              className='singInBtn mr-sm-2 mr-1'
+              style={{
+                background: '#FFFFFF',
+                color: '#ff6c37',
+                border: '1px solid #ff6c37',
+                borderRadius: '7px',
+                height: '38px',
+              }}
+            >
+              + إعلان جديد
+            </Button>
+            <li class='nav-item dropdown' style={{ direction: 'rtl' }}>
               <a
                 class='nav-link dropdown-toggle'
                 href='#'

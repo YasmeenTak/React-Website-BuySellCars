@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { AiOutlineHome } from 'react-icons/ai';
+import { IoMdNotificationsOutline } from 'react-icons/io';
+
 import './styleLogin.css';
 
 export class NavbarlogIn extends Component {
@@ -28,13 +30,23 @@ export class NavbarlogIn extends Component {
           <ul class='navbar-nav mr-auto'>
             <li class='nav-item active'>
               <a class='nav-link' href='#'>
-                <AiOutlineHome size='1.3em' style={{ marginTop: '20px' }} />
+                <AiOutlineHome
+                  size='1.3em'
+                  style={{ marginBottom: '8px', marginLeft: '5px' }}
+                />
                 الرئيسة <span class='sr-only'>(current)</span>
               </a>
             </li>
             <li class='nav-item'>
               <a class='nav-link' href='#'>
-                <i className='icon-notifications'></i>
+                <IoMdNotificationsOutline
+                  size='1.3em'
+                  style={{
+                    marginBottom: '5px',
+                    marginLeft: '5px',
+                    color: 'black',
+                  }}
+                />
                 الإشعارات
               </a>
             </li>

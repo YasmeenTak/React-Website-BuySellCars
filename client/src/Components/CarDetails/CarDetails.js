@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'react-bootstrap';
 import { faHeart as farFaHeart } from '@fortawesome/free-regular-svg-icons';
-import swal from 'sweetalert';
 
 import './style.css';
 
 export class CarDetails extends Component {
-  handleClick() {
-    swal({
-      text: 'تم استقبال الطلب, سنتواصل معك في أقرب فرصة',
-      icon: 'success',
-      button: 'العودة إلى الصفحة الرئيسية',
-    });
-  }
+  // handleClick() {
+  //   swal({
+  //     text: 'تم استقبال الطلب, سنتواصل معك في أقرب فرصة',
+  //     icon: 'success',
+  //     button: 'العودة إلى الصفحة الرئيسية',
+  //   });
+  // }
   // border: '1px solid black'
   // style={{ border: '1px solid black'}}
   render() {
@@ -141,8 +140,9 @@ export class CarDetails extends Component {
 
               <Button
                 variant='primary'
-                onClick={this.handleClick}
                 type='submit'
+                data-target='#ReserveCar'
+                data-toggle='modal'
                 style={{
                   background: '#ff6c37',
                   border: '1px solid #ff6c37',
@@ -154,6 +154,42 @@ export class CarDetails extends Component {
               >
                 حجز للشراء
               </Button>
+
+              {/* -----------------------------Reserve Car---------------------------------------- */}
+              <div
+                class='modal  fade'
+                id='ReserveCar'
+                tabindex='-1'
+                role='dialog'
+                aria-labelledby='ReserveCarTitle'
+                aria-hidden='true'
+              >
+                <div class='modal-dialog modal-dialog-centered' role='document'>
+                  <div class='modal-content modal2SendRate'>
+                    <div class='modal-header'>
+                      <img
+                        src='assets/img/success2.jpg'
+                        alt='succsses'
+                        className='successImg img-responsive'
+                      />
+                    </div>
+                    <div
+                      class='modal-body'
+                      style={{ margin: 'auto', width: '100%' }}
+                    >
+                      <p style={{ textAlign: 'center' }}>
+                        تم استقبال الطلب, سنتواصل معك في أقرب فرصة
+                      </p>
+                    </div>
+                    <div class='modal-footer' style={{ margin: 'auto' }}>
+                      <a href='#home Page' data-dismiss='modal'>
+                        العودة إلى الصفحة الرئيسية
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* ---------------------------------------------------------------------- */}
             </div>
           </div>
           {/* -------------------------------------------Details End--------------------------------------------- */}

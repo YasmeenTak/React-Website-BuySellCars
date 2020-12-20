@@ -37,7 +37,7 @@ function App() {
     <div className='App'>
       {/* <StaticLine /> */}
       {/* <NavBar /> */}
-      <NavbarlogIn />
+      {/* <NavbarlogIn /> */}
 
       {/* <Head /> */}
       {/* <Home /> */}
@@ -46,7 +46,7 @@ function App() {
       {/* <Login path='/login'/> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
-      {/* <CarDetails /> */}
+      <CarDetails />
       {/* <SpecialCars /> */}
       {/* <OtherCars /> */}
       {/* <DealersCars /> */}

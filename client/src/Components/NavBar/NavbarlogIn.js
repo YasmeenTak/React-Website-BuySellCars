@@ -246,7 +246,7 @@ export class NavbarlogIn extends Component {
                     <Button
                       data-toggle='modal'
                       data-dismiss='modal'
-                      data-target='#sendRating'
+                      data-target='#meetingModal2'
                       className='btnSend'
                       variant='primary'
                       type='submit'
@@ -262,7 +262,6 @@ export class NavbarlogIn extends Component {
                     <Button
                       data-toggle='modal'
                       data-dismiss='modal'
-                      data-target='#sendRating'
                       className='btnSend'
                       variant='primary'
                       type='submit'
@@ -275,6 +274,39 @@ export class NavbarlogIn extends Component {
                     >
                       إلغاء
                     </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* -----------------------------meeting modal 2---------------------------------------- */}
+            <div
+              class='modal  fade'
+              id='meetingModal2'
+              tabindex='-1'
+              role='dialog'
+              aria-labelledby='meetingModal2Title'
+              aria-hidden='true'
+            >
+              <div class='modal-dialog modal-dialog-centered' role='document'>
+                <div class='modal-content modal2SendRate'>
+                  <div class='modal-header'>
+                    <img
+                      src='assets/img/success2.jpg'
+                      alt='succsses'
+                      className='successImg img-responsive'
+                    />
+                  </div>
+                  <div
+                    class='modal-body'
+                    style={{ margin: 'auto', width: '80%' }}
+                  >
+                    <p style={{ textAlign: 'center' }}>تم تأكيد الموعد</p>
+                  </div>
+                  <div class='modal-footer' style={{ margin: 'auto' }}>
+                    <a href='#home Page' data-dismiss='modal'>
+                      العودة إلى الصفحة الرئيسية
+                    </a>
                   </div>
                 </div>
               </div>

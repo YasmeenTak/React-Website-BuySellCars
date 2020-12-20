@@ -3,6 +3,7 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { BiCar } from 'react-icons/bi';
 import { Button } from 'react-bootstrap';
+import Rating from '@material-ui/lab/Rating';
 
 import './styleLogin.css';
 
@@ -40,7 +41,14 @@ export class NavbarlogIn extends Component {
               </a>
             </li>
             <li class='nav-item'>
-              <a class='nav-link' href='#'>
+              <a
+                class='nav-link dropdown'
+                id='dropdownMenu2'
+                data-toggle='dropdown'
+                aria-haspopup='true'
+                aria-expanded='false'
+                href='#'
+              >
                 <IoMdNotificationsOutline
                   size='1.3em'
                   style={{
@@ -51,7 +59,103 @@ export class NavbarlogIn extends Component {
                 />
                 الإشعارات
               </a>
+              <div
+                class='dropdown-menu'
+                aria-labelledby='dropdownMenu2'
+                style={{ textAlign: 'right' }}
+              >
+                <button
+                  class='dropdown-item'
+                  type='button'
+                  data-toggle='modal'
+                  data-target='#exampleModalCenter'
+                >
+                  تمت عملية البيع بنجاح الرجاء قم بكتابة تقييم
+                </button>
+
+                {/* ----------------------------------------------------------------- */}
+
+                <button class='dropdown-item' type='button'>
+                  قام عبدالله فوزي بحجز موعد لشراء السيارة
+                </button>
+                <button class='dropdown-item' type='button'>
+                  تم عرض سيارة جديدة للبيع من نوع نيسان
+                </button>
+                <button class='dropdown-item' type='button'>
+                  تم نشر عرض جديد من قبل معرض فورد
+                </button>
+                <button class='dropdown-item' type='button'>
+                  تم عرض سيارة جديدة للبيع من نوع ميرسيدس
+                </button>
+              </div>
             </li>
+
+            {/* --------------------------------------------------------------------- */}
+            {/* <!-- Modal --> */}
+            <div
+              class='modal fade'
+              id='exampleModalCenter'
+              tabindex='-1'
+              role='dialog'
+              aria-labelledby='exampleModalCenterTitle'
+              aria-hidden='true'
+            >
+              <div class='modal-dialog modal-dialog-centered' role='document'>
+                <div class='modal-content'>
+                  <div class='modal-headear'>
+                    <div className='AvaterImgModal'>
+                      <img
+                        src='assets/img/avater2.jpg'
+                        alt='Avatar'
+                        className='userImgModal img-responsive'
+                      />
+                    </div>
+                  </div>
+                  <div class='modal-body'>
+                    <p className='textModal'>
+                      تمت عملية البيع بنجاح الرجاء قم بكتابة تقييم يشمل عملية
+                      البيع عن طريق التطبيق ودور البائع في تسهيل المهمة
+                    </p>
+                    <div>
+                      <Rating
+                        name='size-medium'
+                        defaultValue={2}
+                        style={{
+                          direction: 'ltr',
+                          color: '#FF6C37',
+                          marginBottom: '20px',
+                        }}
+                      />
+                    </div>
+                    <input
+                      type='text'
+                      className='inputModal'
+                      placeholder='اكتب تعليق'
+                    />
+                  </div>
+                  <div class='modal-footer'>
+                    <Button
+                      data-dismiss='modal'
+                      className='btnSend'
+                      variant='primary'
+                      type='submit'
+                      style={{
+                        background: '#ff6c37',
+                        border: '1px solid #ff6c37',
+                        borderRadius: '12px',
+                        marginBottom: '50px',
+                        width: '170px',
+                        margin: 'auto',
+                      }}
+                    >
+                      إرسال
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* --------------------------------------------------------------------- */}
+
             <li class='nav-item'>
               <a class='nav-link' href='#'>
                 <BiCar
@@ -77,7 +181,7 @@ export class NavbarlogIn extends Component {
             >
               + إعلان جديد
             </Button>
-            <li class='nav-item dropdown' style={{ direction: 'rtl' }}>
+            <li class='nav-item dropdown' style={{ direction: 'ltr' }}>
               <a
                 class='nav-link dropdown-toggle'
                 href='#'
@@ -89,7 +193,11 @@ export class NavbarlogIn extends Component {
               >
                 المزيد
               </a>
-              <div class='dropdown-menu' aria-labelledby='navbarDropdown'>
+              <div
+                class='dropdown-menu'
+                aria-labelledby='navbarDropdown'
+                style={{ direction: 'ltr' }}
+              >
                 <a class='dropdown-item' href='#'>
                   المفضلة
                 </a>

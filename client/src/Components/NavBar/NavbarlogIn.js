@@ -75,15 +75,26 @@ export class NavbarlogIn extends Component {
 
                 {/* ----------------------------------------------------------------- */}
 
-                <button class='dropdown-item' type='button'>
+                <button
+                  class='dropdown-item'
+                  type='button'
+                  data-toggle='modal'
+                  data-target='#meetingTimeModal'
+                >
                   قام عبدالله فوزي بحجز موعد لشراء السيارة
                 </button>
+                {/* ----------------------------------------------------------------- */}
+
                 <button class='dropdown-item' type='button'>
                   تم عرض سيارة جديدة للبيع من نوع نيسان
                 </button>
+                {/* ----------------------------------------------------------------- */}
+
                 <button class='dropdown-item' type='button'>
                   تم نشر عرض جديد من قبل معرض فورد
                 </button>
+                {/* ----------------------------------------------------------------- */}
+
                 <button class='dropdown-item' type='button'>
                   تم عرض سيارة جديدة للبيع من نوع ميرسيدس
                 </button>
@@ -192,6 +203,83 @@ export class NavbarlogIn extends Component {
               </div>
             </div>
             {/* --------------------------------------------------------------------- */}
+            {/* ------------------------------Meeting time Modal--------------------------------------- */}
+            <div
+              class='modal fade'
+              id='meetingTimeModal'
+              tabindex='-1'
+              role='dialog'
+              aria-labelledby='meetingTimeModalTitle'
+              aria-hidden='true'
+            >
+              <div class='modal-dialog modal-dialog-centered' role='document'>
+                <div class='modal-content meetingDetails'>
+                  <div class='modal-headear'>
+                    <div className='meetingTimeImgDiv'>
+                      <img
+                        src='assets/img/meetingtime.jpg'
+                        alt='meeting details'
+                        className='meetingTimeImg img-responsive'
+                      />
+                    </div>
+                    <div style={{ marginTop: '20px' }}>
+                      <p style={{ textAlign: 'center' }}>
+                        تم تحديد موعد لمقابلة البائع لمعاينة السيارة
+                      </p>
+                    </div>
+                  </div>
+                  <div class='modal-body meetingBody'>
+                    <div className='row '>
+                      <i className='icon-calendar'></i>
+                      <p>20/11/2020</p>
+                    </div>
+                    <div className='row '>
+                      <i className='icon-clock'></i>
+                      <p>5:00 p.m.</p>
+                    </div>
+                    <div className='row '>
+                      <i className='icon-map-pin'></i>
+                      <p>مطعم الروتس</p>
+                    </div>
+                  </div>
+                  <div class='modal-footer btnsMeetingModal'>
+                    <Button
+                      data-toggle='modal'
+                      data-dismiss='modal'
+                      data-target='#sendRating'
+                      className='btnSend'
+                      variant='primary'
+                      type='submit'
+                      style={{
+                        background: '#ff6c37',
+                        border: '1px solid #ff6c37',
+                        borderRadius: '12px',
+                        width: '160px',
+                      }}
+                    >
+                      تأكيد
+                    </Button>
+                    <Button
+                      data-toggle='modal'
+                      data-dismiss='modal'
+                      data-target='#sendRating'
+                      className='btnSend'
+                      variant='primary'
+                      type='submit'
+                      style={{
+                        background: '#A8A8A8',
+                        border: '1px solid #A8A8A8',
+                        borderRadius: '12px',
+                        width: '160px',
+                      }}
+                    >
+                      إلغاء
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* ---------------------------------------------------------------------- */}
 
             <li class='nav-item'>
               <a class='nav-link' href='#'>

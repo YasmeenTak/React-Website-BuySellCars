@@ -57,3 +57,25 @@
   padding: 50px;
   border-radius: 15px;
 }
+
+.meetingTimeImg {
+  width: 70%;
+}
+
+.meetingDetails {
+  padding: 40px;
+}
+
+.btnsMeetingModal {
+  margin: auto;
+}
+
+.modal-body > div > i {
+  color: #707070;
+  font-size: 1.2em;
+}
+
+.meetingBody {
+  color: #707070;
+  margin: auto;
+}

@@ -16,7 +16,7 @@
   margin: auto;
   height: 150px;
   position: relative;
-  margin-top: -68px;
+  margin-top: -88px;
 }
 .modal-header {
   border-bottom: 0 none;
@@ -44,3 +44,16 @@
   margin: auto;
 }
 
+.successImg {
+  margin: auto;
+  width: 25%;
+}
+.modal1body {
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+.modal2SendRate {
+  padding: 50px;
+  border-radius: 15px;
+}

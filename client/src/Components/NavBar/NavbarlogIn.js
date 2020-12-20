@@ -90,8 +90,8 @@ export class NavbarlogIn extends Component {
               </div>
             </li>
 
-            {/* --------------------------------------------------------------------- */}
-            {/* <!-- Modal --> */}
+            {/* ------------------------------Modal 1--------------------------------------- */}
+            {/* <!-- Modal 1 --> */}
             <div
               class='modal fade'
               id='exampleModalCenter'
@@ -101,7 +101,7 @@ export class NavbarlogIn extends Component {
               aria-hidden='true'
             >
               <div class='modal-dialog modal-dialog-centered' role='document'>
-                <div class='modal-content'>
+                <div class='modal-content modal1body'>
                   <div class='modal-headear'>
                     <div className='AvaterImgModal'>
                       <img
@@ -135,7 +135,9 @@ export class NavbarlogIn extends Component {
                   </div>
                   <div class='modal-footer'>
                     <Button
+                      data-toggle='modal'
                       data-dismiss='modal'
+                      data-target='#sendRating'
                       className='btnSend'
                       variant='primary'
                       type='submit'
@@ -150,6 +152,41 @@ export class NavbarlogIn extends Component {
                     >
                       إرسال
                     </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* -----------------------------modal 2---------------------------------------- */}
+            <div
+              class='modal  fade'
+              id='sendRating'
+              tabindex='-1'
+              role='dialog'
+              aria-labelledby='sendRatingTitle'
+              aria-hidden='true'
+            >
+              <div class='modal-dialog modal-dialog-centered' role='document'>
+                <div class='modal-content modal2SendRate'>
+                  <div class='modal-header'>
+                    <img
+                      src='assets/img/success2.jpg'
+                      alt='succsses'
+                      className='successImg img-responsive'
+                    />
+                  </div>
+                  <div
+                    class='modal-body'
+                    style={{ margin: 'auto', width: '80%' }}
+                  >
+                    <p style={{ textAlign: 'center' }}>
+                      سنقوم بأخذ هذه التقييمات بعين الاعتبار
+                      <br /> لتطوير التطبيق, شكرا لتعاونكم
+                    </p>
+                  </div>
+                  <div class='modal-footer' style={{ margin: 'auto' }}>
+                    <a href='#home Page' data-dismiss='modal'>
+                      العودة إلى الصفحة الرئيسية
+                    </a>
                   </div>
                 </div>
               </div>

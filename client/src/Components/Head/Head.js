@@ -31,11 +31,19 @@ export class Head extends Component {
               ابحث هنا واحجز سيارتك للشراء وسنقوم بالتواصل معك في أقرب وقت
             </h6>
 
-            <InputGroup className='mt-5 mb-5 w-75' style={{ float: 'right' }}>
+            <InputGroup
+              className='mt-5 mb-5 w-75'
+              style={{ float: 'right', height: '40px' }}
+            >
               <InputGroup.Prepend>
                 <Button
                   variant='outline-secondary'
-                  style={{ backgroundColor: '#ff6c37', color: 'white' }}
+                  style={{
+                    backgroundColor: '#ff6c37',
+                    width: '80px',
+                    border: 'none',
+                    borderRadius: '10px 0 0 10px',
+                  }}
                   data-toggle='modal'
                   data-target='.bd-example-modal-lg'
                 >
@@ -43,13 +51,17 @@ export class Head extends Component {
                     src='/assets/fontello/font/icons.svg'
                     className='filterIcon'
                   ></img> */}
-                  Search
+                  <i
+                    className='icon-icon-ionic-ios-options'
+                    style={{ color: 'white' }}
+                  ></i>
                 </Button>
               </InputGroup.Prepend>
               <FormControl
                 aria-describedby='basic-addon1'
                 type='text'
                 placeholder='ابحث هنا'
+                style={{ borderRadius: '0 10px 10px 0', height: '40px' }}
               />
             </InputGroup>
 

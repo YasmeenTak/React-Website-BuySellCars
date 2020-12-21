@@ -40,13 +40,13 @@ function App() {
       {/* <NavbarlogIn /> */}
 
       {/* <Head /> */}
-      {/* <Home /> */}
+      <Home />
       {/* <AboutUS path='/about' /> */}
       {/* <ContactUs path='/contact us'/> */}
       {/* <Login path='/login'/> */}
       {/* <Registration /> */}
       {/* <AddAds /> */}
-      <CarDetails />
+      {/* <CarDetails /> */}
       {/* <SpecialCars /> */}
       {/* <OtherCars /> */}
       {/* <DealersCars /> */}

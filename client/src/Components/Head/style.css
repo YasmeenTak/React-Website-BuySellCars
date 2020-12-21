@@ -49,15 +49,77 @@
   margin-right: 500px;
 }
 
-.modal-header .close {
-  padding: 1rem 1rem;
-  margin: -1rem auto -1rem -1rem;
-}
-
 .form-control.selectFilter {
   margin: 5px;
   width: 90%;
 }
-#modalBody {
+#modalBodyFilter {
   padding: 4rem;
+}
+
+#filterInput:focus {
+  outline: none !important;
+  border: 1px solid #818181;
+  box-shadow: 0 0 10px #818181;
+}
+
+#filterInput {
+  border-radius: 0 10px 10px 0;
+  height: 40px;
+}
+
+#filterInput::placeholder {
+  color: #818181;
+}
+
+/* .modal-header .close {
+
+} */
+
+.radioBtnForm > input {
+  width: 15px;
+}
+
+/* .radioBtnForm > label {
+  width: 15px;
+} */
+
+.radioInputDiv {
+  display: block;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #bec7be;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
 }

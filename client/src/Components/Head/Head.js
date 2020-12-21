@@ -3,6 +3,11 @@ import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSortAmountDownAlt } from '@fortawesome/free-solid-svg-icons';
 import { InputGroup, Button, FormControl, FormCheck } from 'react-bootstrap';
+import Checkbox from '@material-ui/core/Checkbox';
+import Radio from '@material-ui/core/Radio';
+
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class Head extends Component {
@@ -47,10 +52,6 @@ export class Head extends Component {
                   data-toggle='modal'
                   data-target='.bd-example-modal-lg'
                 >
-                  {/* <img
-                    src='/assets/fontello/font/icons.svg'
-                    className='filterIcon'
-                  ></img> */}
                   <i
                     className='icon-icon-ionic-ios-options'
                     style={{ color: 'white' }}
@@ -58,10 +59,10 @@ export class Head extends Component {
                 </Button>
               </InputGroup.Prepend>
               <FormControl
+                id='filterInput'
                 aria-describedby='basic-addon1'
                 type='text'
                 placeholder='ابحث هنا'
-                style={{ borderRadius: '0 10px 10px 0', height: '40px' }}
               />
             </InputGroup>
 
@@ -82,11 +83,12 @@ export class Head extends Component {
                       class='close order-1'
                       data-dismiss='modal'
                       aria-label='Close'
+                      style={{ textAlign: 'left' }}
                     >
                       <span aria-hidden='true'>&times;</span>
                     </button>
                   </div>
-                  <div className='modal-body' id='modalBody'>
+                  <div className='modal-body' id='modalBodyFilter'>
                     <p>البراند</p>
                     <select className='form-control selectFilter' style={{}}>
                       <option>براند السيارة</option>
@@ -94,13 +96,56 @@ export class Head extends Component {
                     <select className='form-control selectFilter'>
                       <option>الموديل</option>
                     </select>
-                    <p>
-                      __________________________________________________________
-                    </p>
-                    {/* -------------------------------------------------------- */}
-
-                    {/* -------------------------------------------------------------- */}
+                    <div className='divider'></div>
                   </div>
+                  {/* ----------------------------checkBoxes---------------------------- */}
+
+                  <div
+                    className='container checkBoxes'
+                    style={{ width: '70%' }}
+                  >
+                    <div class='row'>
+                      <div class='col'>
+                        <p>نوع السيارة</p>
+                        <div className='radioInputDiv'>
+                          <FormControlLabel
+                            value='female'
+                            control={<Radio color='primary' />}
+                            label='أوتوماتيك'
+                            className='radioInput'
+                          />
+                        </div>
+                      </div>
+
+                      <div class='col'>
+                        <p>الزخرفة الخارجية</p>
+                        <FormControlLabel
+                          value='female'
+                          control={<Radio color='primary' />}
+                          label='أوتوماتيك'
+                          className='radioInput'
+                        />
+                      </div>
+                      <div class='col'>
+                        <p>الحالة العامة للسيارة</p>
+                        <FormControlLabel
+                          value='female'
+                          control={<Radio color='primary' />}
+                          label='أوتوماتيك'
+                          className='radioInput'
+                        />
+                      </div>
+                    </div>
+                    <div className='divider'></div>
+                  </div>
+                  {/* -------------------------------------------------------------- */}
+                  <div class='slidecontainer'>
+                    <p>Default range slider:</p>
+                    <input type='range' min='1' max='100' value='50' />
+                  </div>
+
+                  {/* -------------------------------------------------------------- */}
+
                   <div className='modal-footer'>
                     <button
                       type='button'

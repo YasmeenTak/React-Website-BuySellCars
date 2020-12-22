@@ -87,39 +87,46 @@
 .radioInputDiv {
   display: block;
 }
-
 .slidecontainer {
-  width: 100%; /* Width of the outside container */
-}
-.slider:hover {
-  opacity: 1;
+  position: relative;
+  max-width: 450px;
+  overflow: hidden;
 }
 
-.slider::-webkit-slider-thumb {
+.rangeSliderInput {
+  width: 70%;
+}
+
+/* input[type='range']::-webkit-slider-thumb {
+  height: 12px;
+  width: 45px;
+  cursor: pointer;
   -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #bec7be;
-  cursor: pointer;
+  border-bottom: 1px solid #29334f;
+  box-shadow: 0 0 0 #ff6c37, 40px 0 0 #ff6c37, 85px 0 0 #ff6c37,
+    130px 0 0 #ff6c37, 175px 0 0 #ff6c37, 220px 0 0 #ff6c37, 265px 0 0 #ff6c37,
+    310px 0 0 #ff6c37, 350px 0 0 #ff6c37, 390px 0 0 #ff6c37, 409px 0 0 #ff6c37;
+  background: black;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+} */
+
+/* input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px;
 }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #4caf50;
-  cursor: pointer;
-}
+input[type='range']::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #434343;
+  box-shadow: -80px 0 0 80px #43e5f7;
+} */
 
-/* The slider itself */
-.slider {
-  -webkit-appearance: none; /* Override default CSS styles */
-  appearance: none;
-  width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
-  background: #d3d3d3; /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
-  transition: opacity 0.2s;
+.filterFooterModal {
+  margin: auto;
 }

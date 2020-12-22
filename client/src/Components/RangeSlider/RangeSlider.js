@@ -13,57 +13,21 @@ const useStyles = makeStyles({
 function valuetext(value) {
   return `${value}°C`;
 }
-const followersMarks = [
+const marks = [
   {
     value: 0,
-    scaledValue: 1000,
-    label: '1k',
+    label: '3000$',
   },
-  {
-    value: 25,
-    scaledValue: 5000,
-    label: '5k',
-  },
-  {
-    value: 50,
-    scaledValue: 10000,
-    label: '10k',
-  },
-  {
-    value: 75,
-    scaledValue: 25000,
-    label: '25k',
-  },
+
   {
     value: 100,
-    scaledValue: 50000,
-    label: '50k',
-  },
-  {
-    value: 125,
-    scaledValue: 100000,
-    label: '100k',
-  },
-  {
-    value: 150,
-    scaledValue: 250000,
-    label: '250k',
-  },
-  {
-    value: 175,
-    scaledValue: 500000,
-    label: '500k',
-  },
-  {
-    value: 200,
-    scaledValue: 1000000,
-    label: '1M',
+    label: '30000$',
   },
 ];
 class RangeSlider extends Component {
   // const [value, setValue] = React.useState([20, 37]);
   state = {
-    value: [20, 37],
+    value: [0, 30],
   };
 
   handleChange(e, newValue) {
@@ -71,18 +35,18 @@ class RangeSlider extends Component {
   }
   render() {
     return (
-      <div className={useStyles.root}>
+      <div className={useStyles.root} style={{ direction: 'rtl' }}>
         <Typography id='range-slider' gutterBottom>
           متوسط السعر
         </Typography>
         <Slider
-          style={{ color: '#FF6C37' }}
+          style={{ color: '#FF6C37', direction: 'ltr' }}
           value={this.state.value}
           onChange={this.handleChange.bind(this)}
           valueLabelDisplay='auto'
           aria-labelledby='range-slider'
           getAriaValueText={valuetext}
-          marks={followersMarks}
+          marks={marks}
         />
       </div>
     );

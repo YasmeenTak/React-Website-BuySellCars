@@ -24,7 +24,7 @@ import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import ValidationCode from './Components/ValidationCode/ValidationCode';
 import ChangePassword from './Components/ChangePassword/ChangePassword';
 import ResetPassword from './Components/ResetPassword/ResetPassword';
-// import RangeSlider from './Components/RangeSlider/RangeSlider';
+import RangeSlider from './Components/RangeSlider/RangeSlider';
 
 import NavbarlogIn from './Components/NavBar/NavbarlogIn';
 import Settings from './Components/Settings/Settings';

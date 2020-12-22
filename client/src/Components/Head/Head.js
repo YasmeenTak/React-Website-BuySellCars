@@ -6,7 +6,7 @@ import { InputGroup, Button, FormControl, FormCheck } from 'react-bootstrap';
 import Checkbox from '@material-ui/core/Checkbox';
 import Radio from '@material-ui/core/Radio';
 // import { Slider } from '@material-ui/core';
-
+import RangeSlider from '../RangeSlider/RangeSlider';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -140,7 +140,23 @@ export class Head extends Component {
                       <div className='divider'></div>
                     </div>
                     {/* -------------------------------------------------------------- */}
-                    <div class='slidecontainer'>
+                    <div class='sliderDiv'>
+                      <RangeSlider />
+                    </div>
+                    {/* <form className='rangeSliderBS'>
+                      <div class='form-group'>
+                        <label for='formControlRange'>متوسط السعر</label>
+                        <input
+                          type='range'
+                          class='form-control-range'
+                          id='formControlRange'
+                          min='3000'
+                          max='30000'
+                          defaultValue='15000'
+                        />
+                      </div>
+                    </form> */}
+                    {/* <div class='slidecontainer'>
                       <p>متوسط السعر</p>
                       <datalist id='tickmarks'>
                         <option value='0' label='0%'></option>
@@ -162,7 +178,7 @@ export class Head extends Component {
                           <div id='thumb'></div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* -------------------------------------------------------------- */}
                     <div className='modal-footer filterFooterModal'>

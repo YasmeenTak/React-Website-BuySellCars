@@ -18,6 +18,7 @@ import DealersCars from './Components/DealersCars/Dealers';
 
 import MySales from './Components/MySales/MySales';
 import MyPurchases from './Components/MyPurchases/MyPurchases';
+import MyGallery from './Components/MyGallery/MyGallery';
 
 import UserProfile from './Components/UserProfile/UserProfile';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
@@ -44,7 +45,7 @@ function App() {
       {/* <RangeSlider /> */}
 
       {/* <Head /> */}
-      <Home />
+      {/* <Home /> */}
       {/* <AboutUS path='/about' /> */}
       {/* <ContactUs path='/contact us'/> */}
       {/* <Login path='/login'/> */}
@@ -56,6 +57,7 @@ function App() {
       {/* <DealersCars /> */}
       {/* <MyPurchases /> */}
       {/* <MySales /> */}
+      <MyGallery />
 
       {/* <UserProfile /> */}
       {/* <ChangePassword path='/change password' /> */}

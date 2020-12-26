@@ -74,7 +74,7 @@ export class NavbarlogIn extends Component {
                 </button>
 
                 {/* ----------------------------------------------------------------- */}
-
+                <i className='icon'></i>
                 <button
                   class='dropdown-item'
                   type='button'

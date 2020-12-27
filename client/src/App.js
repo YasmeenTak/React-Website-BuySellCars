@@ -34,6 +34,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
 import Test from './Components/Test/Test';
+import EditUserProfile from './Components/EditUserProfile/EditUserProfile';
 
 function App() {
   return (
@@ -57,9 +58,10 @@ function App() {
       {/* <DealersCars /> */}
       {/* <MyPurchases /> */}
       {/* <MySales /> */}
-      <MyGallery />
+      {/* <MyGallery /> */}
 
       {/* <UserProfile /> */}
+      <EditUserProfile/>
       {/* <ChangePassword path='/change password' /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}

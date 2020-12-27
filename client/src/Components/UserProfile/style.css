@@ -14,7 +14,7 @@
   margin: auto;
   height: 160px;
   position: absolute;
-  top: 80px;
+  top: 25px;
   left: 0;
   right: 0;
 }
@@ -38,7 +38,7 @@
   padding: 20px;
   margin-bottom: 50px;
 }
-legend {
+legends {
   position: relative;
   top: 25px;
   width: auto; /* Or auto */

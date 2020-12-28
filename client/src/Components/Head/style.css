@@ -23,7 +23,6 @@
 }
 
 #appBtn {
-  width: 150px;
   height: 45px;
 }
 .appButton {
@@ -134,4 +133,8 @@ input[type='range']::-webkit-slider-thumb {
 .sliderDiv {
   width: 80%;
   margin: auto;
+}
+
+.googlePlayImg {
+  margin-right: 10px;
 }

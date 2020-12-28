@@ -13,93 +13,51 @@ export class Footer extends Component {
   render() {
     return (
       <div>
-        <footer className='footer'>
-          <div className='container py-5'>
-            <div className='row py-4'>
-              <div className='col-lg-4 col-md-6 mb-lg-0'>
-                <h6 className='text-uppercase font-weight-bold mb-4'>
-                  النشرة الإخبارية
-                </h6>
-                <p className='text mb-4'>
-                  ليصلك كل جديد الرجاء الاشتراك بكتابة البريد الإلكتروني
-                </p>
-                {/* <div className='input-group'>
-                  <input
-                    type='email'
-                    placeholder='jeamen1990@gmail.com'
-                    aria-describedby='button-addon1'
-                    className='form-control border-0 shadow-0'
-                  />
-                  <div className='input-group-append'>
-                    <button
-                      id='button-addon1'
-                      type='submit'
-                      className='btn btn-link'
-                    >
-                      <i className='fa fa-paper-plane'></i>
-                    </button>
-                  </div>
-                </div> */}
-
-                <div className='input-group mb-3'>
-                  <div className='input-group-prepend'>
-                    <button
-                      className='btn btn-outline-secondary'
-                      type='button'
-                      style={{
-                        backgroundColor: '#FFC107',
-                        color: 'white',
-                        border: '#FFC107',
-                      }}
-                    >
-                      اشتراك
-                    </button>
-                  </div>
-                  <input
-                    className='border-0 shadow-0'
-                    type='email'
-                    placeholder='jeamen1990@gmail.com'
-                    className='form-control'
-                    aria-label=''
-                    aria-describedby='basic-addon1'
+        <footer>
+          <div class='container py-5'>
+            <div class='row py-4'>
+              <div class='col-lg-4 col-md-6 mb-4 mb-lg-0 firstSectionFooter'>
+                <div>
+                  <img
+                    src='assets/img/logo.png'
+                    alt=''
+                    className='mb-3 logoFooter col'
                   />
                 </div>
+                <div className='socialMediaIcons '>
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    style={{ color: '#1BA5EC', marginRight: '30px' }}
+                  />
+
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    style={{ color: '#00719B', marginRight: '30px' }}
+                  />
+                  <FontAwesomeIcon
+                    icon={faApple}
+                    style={{ color: 'black', marginRight: '30px' }}
+                  />
+                </div>
+
+                <div className='appButton '>
+                  <a href='https://www.apple.com/app-store/' target='_blank'>
+                    <img src='/assets/img/appleStore.png' id='appBtn' />
+                  </a>
+                  <a href='https://play.google.com/store' target='_blank'>
+                    <img
+                      src='/assets/img/googlePlay.png'
+                      id='appBtn'
+                      className='googlePlayImg'
+                    />
+                  </a>
+                </div>
+                {/* ---------------------------------------------------------------------------- */}
               </div>
-              <div
-                className='col-lg-2 col-md-6 mb-4 mb-lg-0'
-                id='categoriesSec'
-              >
-                {/* <h6 className='text-uppercase font-weight-bold mb-4'>التصنيفات</h6> */}
-                <ul className='list-unstyled mb-0'>
-                  <li className='mb-2'>
-                    <a href='#' className='text'>
-                      التصنيفات
-                    </a>
-                  </li>
-                  <li className='mb-2'>
-                    <a href='#' className='text'>
-                      السيارات المميزة
-                    </a>
-                  </li>
-                  <li className='mb-2'>
-                    <a href='#' className='text'>
-                      السيارات الأخيرة
-                    </a>
-                  </li>
-                  <li className='mb-2'>
-                    <a href='#' className='text'>
-                      المتعاقدون-أصحاب المعارض
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className='col-lg-2 col-md-6 mb-4 mb-lg-0'>
-                {/* <h6 className='text-uppercase font-weight-bold mb-4'>روابط مهمة</h6> */}
-                <ul className='list-unstyled mb-0' id='ImportantlinksSec'>
-                  <li className='mb-2'>
-                    <a href='#' className='text'>
-                      روابط مهمة
-                    </a>
+              <div class='col-lg-2 col-md-6 mb-4 mb-lg-0 scndSectionFooter'>
+                <ul style={{ textAlign: 'right' }}>
+                  <li className='mb-2' style={{ textDecoration: 'underline' }}>
+                    روابط مهمة
                   </li>
                   <li className='mb-2'>
                     <a href='#' className='text'>
@@ -129,65 +87,62 @@ export class Footer extends Component {
                   </li>
                 </ul>
               </div>
-
-              <div className='col-lg-4 col-md-6 mb-4 mb-lg-0'>
-                <img
-                  src='assets/img/logo.png'
-                  alt=''
-                  width='180'
-                  className='mb-3'
-                />
-                <div className='socialMediaIcons'>
-                  <FontAwesomeIcon
-                    icon={faApple}
-                    style={{ color: 'black', marginRight: '20px' }}
-                  />
-                  <FontAwesomeIcon
-                    icon={faFacebookF}
-                    style={{ color: '#00719B', marginRight: '20px' }}
-                  />
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    style={{ color: '#1BA5EC', marginRight: '20px' }}
-                  />
-                </div>
-
-                <div className='appButton'>
-                  <a href='https://play.google.com/store' target='_blank'>
-                    <img src='/assets/img/googlePlay.png' id='appBtn' />
-                  </a>
-                  <a href='https://www.apple.com/app-store/' target='_blank'>
-                    <img src='/assets/img/appleStore.png' id='appBtn' />
-                  </a>
-                </div>
-
-                <ul className='list-inline mt-4'>
-                  <li className='list-inline-item'>
-                    <a href='#' target='_blank' title='twitter'>
-                      <i className='fa fa-twitter'></i>
+              <div class='col-lg-2 col-md-6 mb-4 mb-lg-0 scndSectionFooter'>
+                <ul style={{ textAlign: 'right' }}>
+                  <li className='mb-2' style={{ textDecoration: 'underline' }}>
+                    التصنيفات
+                  </li>
+                  <li className='mb-2'>
+                    <a href='#' className='text'>
+                      السيارات المميزة
                     </a>
                   </li>
-                  <li className='list-inline-item'>
-                    <a href='#' target='_blank' title='facebook'>
-                      <i className='fa fa-facebook'></i>
+                  <li className='mb-2'>
+                    <a href='#' className='text'>
+                      السيارات الأخيرة
                     </a>
                   </li>
-                  <li className='list-inline-item'>
-                    <a href='#' target='_blank' title='instagram'>
-                      <i className='fa fa-instagram'></i>
-                    </a>
-                  </li>
-                  <li className='list-inline-item'>
-                    <a href='#' target='_blank' title='pinterest'>
-                      <i className='fa fa-pinterest'></i>
-                    </a>
-                  </li>
-                  <li className='list-inline-item'>
-                    <a href='#' target='_blank' title='vimeo'>
-                      <i className='fa fa-vimeo'></i>
+                  <li className='mb-2'>
+                    <a href='#' className='text'>
+                      المتعاقدون-أصحاب المعارض
                     </a>
                   </li>
                 </ul>
+              </div>
+              {/* ---------------------------------------------------------------------------- */}
+
+              <div class='col-lg-4 col-md-6 mb-lg-0'>
+                <p className='text-uppercase  mb-4 pIn3Section'>
+                  النشرة الإخبارية
+                </p>
+                <p className='text mb-4'>
+                  ليصلك كل جديد الرجاء الاشتراك بكتابة البريد الإلكتروني
+                </p>
+
+                <div className='input-group mb-3 inputGroupFooter'>
+                  <input
+                    className='border-0 shadow-0'
+                    type='email'
+                    placeholder='jeamen1990@gmail.com'
+                    className='form-control'
+                    aria-label=''
+                    aria-describedby='basic-addon1'
+                  />
+                  <div className='input-group-prepend'>
+                    <button
+                      className='btn btn-outline-secondary'
+                      type='button'
+                      style={{
+                        backgroundColor: '#FFC107',
+                        color: 'white',
+                        border: '#FFC107',
+                        borderRadius: '5px 0 0 5px',
+                      }}
+                    >
+                      اشتراك
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

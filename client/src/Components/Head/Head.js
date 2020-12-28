@@ -221,7 +221,11 @@ export class Head extends Component {
 
               <div className='appButton'>
                 <a href='https://play.google.com/store' target='_blank'>
-                  <img src='/assets/img/googlePlay.png' id='appBtn' />
+                  <img
+                    src='/assets/img/googlePlay.png'
+                    id='appBtn'
+                    className='googlePlayImg'
+                  />
                 </a>
                 <a href='https://www.apple.com/app-store/' target='_blank'>
                   <img src='/assets/img/appleStore.png' id='appBtn' />

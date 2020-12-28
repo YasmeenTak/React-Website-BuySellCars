@@ -17,7 +17,7 @@ function EditUserProfile() {
           <legend>Personalia:</legend>
           <label for='fname'>First name:</label>
           <input type='text' id='fname' name='fname' />
-       
+
           <input type='submit' value='Submit' />
         </fieldset>
       </form>

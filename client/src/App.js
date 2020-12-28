@@ -45,7 +45,7 @@ function App() {
       {/* <NavbarlogIn /> */}
       {/* <RangeSlider /> */}
 
-      {/* <Head /> */}
+      <Head />
       {/* <Home /> */}
       {/* <AboutUS path='/about' /> */}
       {/* <ContactUs path='/contact us'/> */}
@@ -61,14 +61,14 @@ function App() {
       {/* <MyGallery /> */}
 
       {/* <UserProfile /> */}
-      <EditUserProfile/>
+      {/* <EditUserProfile/> */}
       {/* <ChangePassword path='/change password' /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
       {/* <ValidationCode /> */}
       {/* <Settings path='/settings' /> */}
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

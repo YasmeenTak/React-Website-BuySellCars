@@ -14,9 +14,9 @@ export class Footer extends Component {
     return (
       <div>
         <footer>
-          <div class='container py-5'>
-            <div class='row py-4'>
-              <div class='col-lg-4 col-md-6 mb-4 mb-lg-0 firstSectionFooter'>
+          <div className='container py-5'>
+            <div className='row py-4'>
+              <div className='col-lg-4 col-md-6 mb-4 mb-lg-0 firstSectionFooter'>
                 <div>
                   <img
                     src='assets/img/logo.png'
@@ -54,7 +54,7 @@ export class Footer extends Component {
                 </div>
                 {/* ---------------------------------------------------------------------------- */}
               </div>
-              <div class='col-lg-2 col-md-6 mb-4 mb-lg-0 scndSectionFooter'>
+              <div className='col-lg-2 col-md-6 mb-4 mb-lg-0 scndSectionFooter'>
                 <ul style={{ textAlign: 'right' }}>
                   <li className='mb-2' style={{ textDecoration: 'underline' }}>
                     روابط مهمة
@@ -87,7 +87,7 @@ export class Footer extends Component {
                   </li>
                 </ul>
               </div>
-              <div class='col-lg-2 col-md-6 mb-4 mb-lg-0 scndSectionFooter'>
+              <div className='col-lg-2 col-md-6 mb-4 mb-lg-0 scndSectionFooter'>
                 <ul style={{ textAlign: 'right' }}>
                   <li className='mb-2' style={{ textDecoration: 'underline' }}>
                     التصنيفات
@@ -111,7 +111,7 @@ export class Footer extends Component {
               </div>
               {/* ---------------------------------------------------------------------------- */}
 
-              <div class='col-lg-4 col-md-6 mb-lg-0'>
+              <div className='col-lg-4 col-md-6 mb-lg-0'>
                 <p className='text-uppercase  mb-4 pIn3Section'>
                   النشرة الإخبارية
                 </p>

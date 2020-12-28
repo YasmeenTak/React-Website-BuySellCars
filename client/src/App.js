@@ -40,13 +40,8 @@ function App() {
   return (
     <div className='App'>
       {/* <Test /> */}
-      {/* <StaticLine /> */}
-      {/* <NavBar /> */}
-      {/* <NavbarlogIn /> */}
-      {/* <RangeSlider /> */}
 
-      <Head />
-      {/* <Home /> */}
+      {/* <Home  path='/home'/> */}
       {/* <AboutUS path='/about' /> */}
       {/* <ContactUs path='/contact us'/> */}
       {/* <Login path='/login'/> */}
@@ -61,14 +56,20 @@ function App() {
       {/* <MyGallery /> */}
 
       {/* <UserProfile /> */}
-      {/* <EditUserProfile/> */}
+
       {/* <ChangePassword path='/change password' /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
       {/* <ValidationCode /> */}
       {/* <Settings path='/settings' /> */}
 
-      <Footer />
+      {/* <Head /> */}
+      {/* <Footer /> */}
+      {/* <NavBar /> */}
+      <NavbarlogIn />
+      {/* <StaticLine /> */}
+      {/* <RangeSlider /> */}
+      {/* <EditUserProfile/> */}
     </div>
   );
 }

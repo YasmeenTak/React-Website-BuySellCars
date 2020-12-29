@@ -10,11 +10,14 @@ import { Button } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 
 import './style.css';
+import NavbarlogIn from '../NavBar/NavbarlogIn';
 
 export class ContactUs extends Component {
   render() {
     return (
       <div>
+        <NavbarlogIn />
+
         <div className='container-fulid '>
           <div className='contactUsRow'>
             <img

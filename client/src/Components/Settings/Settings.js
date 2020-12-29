@@ -4,12 +4,14 @@ import { RiLockPasswordLine } from 'react-icons/ri';
 import { Link, Redirect, Route, Router } from 'react-router-dom';
 
 import Footer from '../Footer/Footer';
+import NavbarlogIn from '../NavBar/NavbarlogIn';
 import './style.css';
 
 export class Settings extends Component {
   render() {
     return (
       <div>
+        <NavbarlogIn/>
         <div className='container settingsCont' style={{ direction: 'rtl' }}>
           <div className='row'>
             <div className='col settingWord' style={{ fontSize: 'larger' }}>

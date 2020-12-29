@@ -38,38 +38,41 @@ import EditUserProfile from './Components/EditUserProfile/EditUserProfile';
 
 function App() {
   return (
-    <div className='App'>
-      {/* <Test /> */}
+    <div>
+      <Router>
+        <div className='App'>
+          <Home path='/home' />
+          {/* <Login path='/user' /> */}
+          {/* <Registration path='/user'/> */}
+          {/* <ForgotPassword /> */}
+          {/* <ValidationCode /> */}
+          {/* <ResetPassword /> */}
+          {/* <ChangePassword path='/change password' /> */}
+          <SpecialCars />
+          {/* <OtherCars /> */}
+          {/* <DealersCars /> */}
+          {/* <CarDetails /> */}
+          {/* <AddAds path='/addAds'/> */}
+          {/* <MyPurchases /> */}
+          {/* <MySales /> */}
+          {/* <UserProfile /> */}
+          {/* <AboutUS path='/about' /> */}
+          {/* <ContactUs path='/contact us'/> */}
+          {/* <Settings path='/settings' /> */}
 
-      <Home  path='/home'/>
-      {/* <AboutUS path='/about' /> */}
-      {/* <ContactUs path='/contact us'/> */}
-      {/* <Login path='/user'/> */}
-      {/* <Registration path='/user'/> */}
-      {/* <AddAds path='/addAds'/> */}
-      {/* <CarDetails /> */}
-      {/* <SpecialCars /> */}
-      {/* <OtherCars /> */}
-      {/* <DealersCars /> */}
-      {/* <MyPurchases /> */}
-      {/* <MySales /> */}
-      {/* <MyGallery /> */}
+          {/* <Test /> */}
 
-      {/* <UserProfile /> */}
+          {/* <MyGallery /> */}
 
-      {/* <ChangePassword path='/change password' /> */}
-      {/* <ForgotPassword /> */}
-      {/* <ResetPassword /> */}
-      {/* <ValidationCode /> */}
-      {/* <Settings path='/settings' /> */}
-
-      {/* <Head /> */}
-      {/* <Footer /> */}
-      {/* <NavBar /> */}
-      {/* <NavbarlogIn /> */}
-      {/* <StaticLine /> */}
-      {/* <RangeSlider /> */}
-      {/* <EditUserProfile/> */}
+          {/* <Head /> */}
+          {/* <Footer /> */}
+          {/* <NavBar /> */}
+          {/* <NavbarlogIn /> */}
+          {/* <StaticLine /> */}
+          {/* <RangeSlider /> */}
+          {/* <EditUserProfile/> */}
+        </div>
+      </Router>
     </div>
   );
 }

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Rating from '@material-ui/lab/Rating';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as farFaHeart } from '@fortawesome/free-regular-svg-icons';
 
 import Footer from '../Footer/Footer';
+import NavbarlogIn from '../NavBar/NavbarlogIn';
 
 import './style.css';
 
@@ -13,6 +13,7 @@ export class OtherCars extends Component {
   render() {
     return (
       <div>
+        <NavbarlogIn />
         <div className='titleDiv'>
           <p className='titleMain'>أحدث عروض السيارات</p>
           <p className='titleSub'>
@@ -71,7 +72,6 @@ export class OtherCars extends Component {
                           icon={farFaHeart}
                           className='favHeart'
                         />
-                      
                       </div>
                     </Col>
                   </Row>

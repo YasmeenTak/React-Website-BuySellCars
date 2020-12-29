@@ -7,7 +7,7 @@ export class navbar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg='withe' expand='lg' className='shadow-sm '>
+        <Navbar bg='withe' expand='lg' className='shadow-sm py-3'>
           <Navbar href='#home'>
             <img src='assets/img/logo.png' className='logoImg' />
           </Navbar>

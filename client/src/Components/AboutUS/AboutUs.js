@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import NavbarlogIn from '../NavBar/NavbarlogIn';
 import './style.css';
 
 export class AboutUs extends Component {
   render() {
     return (
       <div>
+        <NavbarlogIn />
+
         <div className='container-fulid '>
           <div className='aboutUsRow'>
             <img

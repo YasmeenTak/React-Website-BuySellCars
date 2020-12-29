@@ -4,6 +4,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from '../Footer/Footer';
 import { faHeart as farFaHeart } from '@fortawesome/free-regular-svg-icons';
+import NavbarlogIn from '../NavBar/NavbarlogIn';
 
 import './style.css';
 
@@ -11,6 +12,7 @@ export class Dealers extends Component {
   render() {
     return (
       <div>
+        <NavbarlogIn />
         <div className='titleDiv'>
           <p className='titleMain'>أحدث عروض السيارات</p>
           <p className='titleSub'>

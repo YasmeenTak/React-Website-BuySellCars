@@ -15,7 +15,7 @@ export class Head extends Component {
   render() {
     return (
       <div>
-        <div className='container-fluid'>
+        <div className='container-fluid asd'>
           <div className='row'>
             <div className='col-lg-6  pl-0 parent'>
               <img

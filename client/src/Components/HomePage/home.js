@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Head from '../Head/Head';
 import Footer from '../Footer/Footer';
+import NavBar from '../NavBar/navbar';
+import StaticLine from '../StaticLine/staticLine';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -72,13 +74,18 @@ export class home extends Component {
   render() {
     return (
       <div>
+        {/* <StaticLine /> */}
+        <NavBar />
         <Head />
 
         {/* ----------------------------------------------- slider start ------------------------------------------ */}
         <div>
           <form id='formSlider'>
             <div className='titlesSliderDiv'>
-              <h5 className='titleSlider'>السيارات المميزة</h5>
+              <div className='roaw'>
+                {/* <p className='col-sm-6'style={{border:'1px solid black'}}>عرض الكل</p> */}
+                <h5 className=' titleSlider'>السيارات المميزة</h5>
+              </div>
               <h6 className='subTitleSlider'>
                 السيارات المميزة ذات المواصفات العالية السيارات المميزة ذات
                 المواصفات العالية

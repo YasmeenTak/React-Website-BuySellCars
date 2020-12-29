@@ -41,12 +41,12 @@ function App() {
     <div className='App'>
       {/* <Test /> */}
 
-      {/* <Home  path='/home'/> */}
+      <Home  path='/home'/>
       {/* <AboutUS path='/about' /> */}
       {/* <ContactUs path='/contact us'/> */}
-      {/* <Login path='/login'/> */}
-      {/* <Registration /> */}
-      {/* <AddAds /> */}
+      {/* <Login path='/user'/> */}
+      {/* <Registration path='/user'/> */}
+      {/* <AddAds path='/addAds'/> */}
       {/* <CarDetails /> */}
       {/* <SpecialCars /> */}
       {/* <OtherCars /> */}
@@ -66,7 +66,7 @@ function App() {
       {/* <Head /> */}
       {/* <Footer /> */}
       {/* <NavBar /> */}
-      <NavbarlogIn />
+      {/* <NavbarlogIn /> */}
       {/* <StaticLine /> */}
       {/* <RangeSlider /> */}
       {/* <EditUserProfile/> */}

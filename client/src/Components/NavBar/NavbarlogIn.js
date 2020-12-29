@@ -31,7 +31,8 @@ export class NavbarlogIn extends Component {
             className='collapse navbar-collapse  justify-content-between'
             id='navbarSupportedContent'
           >
-            <ul className='navbar-nav mr-auto '>
+            {/* ---------------------------------Start Nav 3 Items-------------------------------- */}
+            <ul className='navbar-nav mr-auto pl-4'>
               <li className='nav-item active'>
                 <a className='nav-link' href='#'>
                   <AiOutlineHome
@@ -41,7 +42,7 @@ export class NavbarlogIn extends Component {
                   الرئيسة <span className='sr-only'>(current)</span>
                 </a>
               </li>
-              <li className='nav-item'>
+              <li className='nav-item pr-4'>
                 <a
                   className='nav-link dropdown'
                   id='dropdownMenu2'
@@ -326,7 +327,7 @@ export class NavbarlogIn extends Component {
               </div>
               {/* ---------------------------------------------------------------------- */}
 
-              <li className='nav-item'>
+              <li className='nav-item pr-4 pl-4 '>
                 <a className='nav-link' href='#'>
                   <BiCar
                     size='1.3em'
@@ -338,6 +339,8 @@ export class NavbarlogIn extends Component {
                   معرضي
                 </a>
               </li>
+              {/* ---------------------------------End Nav 3 Items-------------------------------- */}
+
               <Button
                 variant='outline-success'
                 className='singInBtn mr-sm-2 mr-1'
@@ -346,12 +349,17 @@ export class NavbarlogIn extends Component {
                   color: '#ff6c37',
                   border: '1px solid #ff6c37',
                   borderRadius: '7px',
-                  height: '38px',
+                  height: '36px',
+                  padding: '5px',
+                  fontSize: 'small',
                 }}
               >
                 + إعلان جديد
               </Button>
-              <li className='nav-item dropdown' style={{ direction: 'ltr' }}>
+              <li
+                className='nav-item dropdown pr-5'
+                style={{ direction: 'ltr' }}
+              >
                 <a
                   className='nav-link dropdown-toggle'
                   href='#'

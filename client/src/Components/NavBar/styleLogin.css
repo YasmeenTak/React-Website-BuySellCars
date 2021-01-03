@@ -79,3 +79,13 @@
   color: #707070;
   margin: auto;
 }
+
+.notificationNav {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownNotification {
+  display: none;
+  position: absolute;
+}

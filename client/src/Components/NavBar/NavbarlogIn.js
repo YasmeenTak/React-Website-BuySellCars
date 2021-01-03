@@ -42,7 +42,7 @@ export class NavbarlogIn extends Component {
                   الرئيسة <span className='sr-only'>(current)</span>
                 </a>
               </li>
-              <li className='nav-item pr-4'>
+              <li className='nav-item pr-4 notificationNav'>
                 <a
                   className='nav-link dropdown'
                   id='dropdownMenu2'
@@ -61,8 +61,9 @@ export class NavbarlogIn extends Component {
                   />
                   الإشعارات
                 </a>
+
                 <div
-                  className='dropdown-menu'
+                  className='dropdown-menu dropdownNotification'
                   aria-labelledby='dropdownMenu2'
                   style={{ textAlign: 'right' }}
                 >
@@ -102,7 +103,6 @@ export class NavbarlogIn extends Component {
                   </button>
                 </div>
               </li>
-
               {/* ------------------------------Modal 1--------------------------------------- */}
               {/* <!-- Modal 1 --> */}
               <div
@@ -374,7 +374,7 @@ export class NavbarlogIn extends Component {
                 <div
                   className='dropdown-menu'
                   aria-labelledby='navbarDropdown'
-                  style={{ direction: 'ltr' }}
+                  style={{ textAlign: 'right' }}
                 >
                   <a className='dropdown-item' href='#'>
                     المفضلة

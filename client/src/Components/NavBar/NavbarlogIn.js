@@ -4,6 +4,9 @@ import { IoMdNotificationsOutline } from 'react-icons/io';
 import { BiCar } from 'react-icons/bi';
 import { Button } from 'react-bootstrap';
 import Rating from '@material-ui/lab/Rating';
+import { BiBriefcaseAlt } from 'react-icons/bi';
+import { FiPhoneOutgoing, FiFileText, FiAlertCircle } from 'react-icons/fi';
+import { TiStarOutline } from 'react-icons/ti';
 
 import './styleLogin.css';
 
@@ -372,24 +375,46 @@ export class NavbarlogIn extends Component {
                   المزيد
                 </a>
                 <div
-                  className='dropdown-menu'
+                  className='dropdown-menu moreDropdown'
                   aria-labelledby='navbarDropdown'
-                  style={{ textAlign: 'right' }}
                 >
                   <a className='dropdown-item' href='#'>
                     المفضلة
+                    <i>
+                      <TiStarOutline />
+                    </i>
                   </a>
+                  <div className='divider'></div>
+
                   <a className='dropdown-item' href='#'>
                     من نحن؟
+                    <i>
+                      <BiBriefcaseAlt />
+                    </i>
                   </a>
+                  <div className='divider'></div>
+
                   <a className='dropdown-item' href='#'>
                     تواصل معنا
+                    <i>
+                      <FiPhoneOutgoing />
+                    </i>
                   </a>
+                  <div className='divider'></div>
+
                   <a className='dropdown-item' href='#'>
                     سياسة الخصوصية
+                    <i>
+                      <FiFileText />
+                    </i>
                   </a>
+                  <div className='divider'></div>
+
                   <a className='dropdown-item' href='#'>
                     شروط الاستخدام
+                    <i>
+                      <FiAlertCircle />
+                    </i>
                   </a>
                 </div>
               </li>

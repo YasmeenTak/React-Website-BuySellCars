@@ -35,14 +35,14 @@ export class NavbarlogIn extends Component {
             id='navbarSupportedContent'
           >
             {/* ---------------------------------Start Nav 3 Items-------------------------------- */}
-            <ul className='navbar-nav mr-auto pl-4'>
+            <ul className='navbar-nav mr-auto pl-4 mainNavLogin'>
               <li className='nav-item active'>
                 <a className='nav-link' href='#'>
                   <AiOutlineHome
                     size='1.3em'
-                    style={{ marginBottom: '8px', marginLeft: '5px' }}
+                    style={{ marginBottom: '8px', marginLeft: '5px'}}
                   />
-                  الرئيسة <span className='sr-only'>(current)</span>
+                الرئيسة
                 </a>
               </li>
               <li className='nav-item pr-4 notificationNav'>

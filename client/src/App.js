@@ -29,7 +29,7 @@ import RangeSlider from './Components/RangeSlider/RangeSlider';
 
 import NavbarlogIn from './Components/NavBar/NavbarlogIn';
 import Settings from './Components/Settings/Settings';
-
+import AddCarDealer from './Components/AddCarDealer/AddCarDealer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -42,13 +42,13 @@ function App() {
       <Router>
         <div className='App'>
           {/* <Home path='/home' /> */}
-          {/* <Login path='/user' /> */}
-          {/* <Registration path='/user'/> */}
+          {/* <Login path='/login' /> */}
+          {/* <Registration path='/register'/> */}
           {/* <ForgotPassword /> */}
           {/* <ValidationCode /> */}
           {/* <ResetPassword /> */}
           {/* <ChangePassword path='/change password' /> */}
-          <SpecialCars />
+          {/* <SpecialCars /> */}
           {/* <OtherCars /> */}
           {/* <DealersCars /> */}
           {/* <CarDetails /> */}
@@ -59,6 +59,8 @@ function App() {
           {/* <AboutUS path='/about' /> */}
           {/* <ContactUs path='/contact us'/> */}
           {/* <Settings path='/settings' /> */}
+
+          <AddCarDealer exact path='/becomeDealer' />
 
           {/* <Test /> */}
           {/* <MyGallery /> */}

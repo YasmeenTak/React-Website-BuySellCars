@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form, Row, Col, Button, Check, Group } from 'react-bootstrap';
+import { Form, Col, Button, Group } from 'react-bootstrap';
 import './style.css';
 
 export class Registration extends Component {

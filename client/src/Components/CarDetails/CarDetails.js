@@ -162,7 +162,7 @@ export class CarDetails extends Component {
 
                 {/* -----------------------------Reserve Car---------------------------------------- */}
                 <div
-                  class='modal  fade'
+                  class='modal fade'
                   id='ReserveCar'
                   tabindex='-1'
                   role='dialog'

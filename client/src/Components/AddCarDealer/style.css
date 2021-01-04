@@ -1,0 +1,7 @@
+.joinUsBtn:focus {
+  box-shadow: none;
+}
+
+.joinUsBtn:hover {
+  background-color: blue;
+}

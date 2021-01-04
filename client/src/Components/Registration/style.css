@@ -25,3 +25,6 @@
 input:-webkit-autofill {
   box-shadow: 0 0 0 50px #eceef0 inset; /* Change the bg color when it filled  */
 }
+.inputReg::placeholder {
+  color: #a9a9a9;
+}

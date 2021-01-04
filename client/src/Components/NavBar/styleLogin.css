@@ -103,3 +103,7 @@
   padding: 1px 6px 1px;
   margin: -4px;
 }
+
+.mainNavLogin > li > a:hover {
+  color: #ff6c37;
+}

@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import './style.css';
 import { Nav, Button, Navbar, Form } from 'react-bootstrap';
 // import { Button } from '@material-ui/core';
 
 export class navbar extends Component {
   render() {
+    const LinkNavbar = (
+      <ul className='navbar-nav'>
+        <li className='nav-item'>
+          <Link to='/becomeDealer' className='nav-link'>
+            Login
+          </Link>
+        </li>
+        <li className='nav-item'>
+          <Link to='/register' className='nav-link'>
+            Register
+          </Link>
+        </li>
+      </ul>
+    );
     return (
       <div>
         <Navbar bg='withe' expand='lg' className='shadow-sm py-3'>
@@ -14,15 +29,16 @@ export class navbar extends Component {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='mr-auto '>
-              <Nav.Link href='#contactus' style={{ color: 'black' }}>
-                تواصل معنا
+              <Nav.Link href='#aboutus' style={{ color: 'black' }}>
+                من نحن؟
               </Nav.Link>
               <Nav.Link href='#faqs' style={{ color: 'black' }}>
                 الأسئلة الشائعة
               </Nav.Link>
-              <Nav.Link href='#aboutus' style={{ color: 'black' }}>
-                من نحن؟
+              <Nav.Link href='#contactus' style={{ color: 'black' }}>
+                تواصل معنا
               </Nav.Link>
+              <Button>أضف معرضك</Button>
             </Nav>
             <Form inline id='Btns'>
               <Button

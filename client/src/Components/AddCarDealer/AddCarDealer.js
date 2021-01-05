@@ -1,6 +1,5 @@
 import Navbar from '../NavBar/navbar';
 import { Form, Col, Button, Group } from 'react-bootstrap';
-
 import './style.css';
 
 function AddCarDealer() {
@@ -10,7 +9,7 @@ function AddCarDealer() {
 
       <div className='container mainDiv'>
         <div className='row'>
-          <div className='col-lg-6  addDealerImgDiv '>
+          <div className='col-lg-6  addDealerImgDiv'>
             <img
               src='/assets/img/cardealer.jpg'
               className='img-fluid'
@@ -57,7 +56,7 @@ function AddCarDealer() {
               <Form.Group controlId='formGridPhoneNum'>
                 <Form.Label>العنوان</Form.Label>
                 <Form.Control
-                  placeholder='0591234567'
+                  placeholder='العنوان'
                   className='inputReg'
                   type='text'
                 />
@@ -94,7 +93,7 @@ function AddCarDealer() {
                     <img
                       src='assets/img/success2.jpg'
                       alt='succsses'
-                      className='successImg img-responsive'
+                      className='successImg img-responsive animate__bounceIn'
                     />
                   </div>
                   <div

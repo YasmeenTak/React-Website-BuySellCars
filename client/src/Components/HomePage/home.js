@@ -71,6 +71,7 @@ var settings = {
 };
 
 export class home extends Component {
+
   render() {
     return (
       <div>
@@ -84,7 +85,7 @@ export class home extends Component {
             <div className='titlesSliderDiv'>
               <div className='roaw'>
                 {/* <p className='col-sm-6'style={{border:'1px solid black'}}>عرض الكل</p> */}
-                <h5 className=' titleSlider'>السيارات المميزة</h5>
+                <h5 className=' titleSlider '>السيارات المميزة</h5>
               </div>
               <h6 className='subTitleSlider'>
                 السيارات المميزة ذات المواصفات العالية السيارات المميزة ذات

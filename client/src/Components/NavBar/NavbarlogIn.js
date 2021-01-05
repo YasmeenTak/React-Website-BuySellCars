@@ -40,9 +40,9 @@ export class NavbarlogIn extends Component {
                 <a className='nav-link' href='#'>
                   <AiOutlineHome
                     size='1.3em'
-                    style={{ marginBottom: '8px', marginLeft: '5px'}}
+                    style={{ marginBottom: '8px', marginLeft: '5px' }}
                   />
-                الرئيسة
+                  الرئيسة
                 </a>
               </li>
               <li className='nav-item pr-4 notificationNav'>
@@ -70,17 +70,29 @@ export class NavbarlogIn extends Component {
                   aria-labelledby='dropdownMenu2'
                   style={{ textAlign: 'right' }}
                 >
-                  <button
-                    className='dropdown-item'
-                    type='button'
-                    data-toggle='modal'
-                    data-target='#exampleModalCenter'
-                  >
-                    تمت عملية البيع بنجاح الرجاء قم بكتابة تقييم
-                  </button>
+                  <div className='row'>
+                    <div className='col-lg-2'>
+                      <img
+                        src='./assets/img/buyNot.jpg'
+                        alt='buy'
+                        className='img-responsive'
+                      />
+                    </div>
+                    <div className='col-lg-10'>
+                      <button
+                        className='dropdown-item'
+                        type='button'
+                        data-toggle='modal'
+                        data-target='#exampleModalCenter'
+                      >
+                        تمت عملية البيع بنجاح الرجاء قم بكتابة تقييم
+                      </button>
+                      <p>قبل 5 أيام</p>
+                    </div>
+                  </div>
 
                   {/* ----------------------------------------------------------------- */}
-                  <i className='icon'></i>
+
                   <button
                     className='dropdown-item'
                     type='button'

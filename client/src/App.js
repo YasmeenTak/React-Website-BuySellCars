@@ -48,7 +48,7 @@ function App() {
           {/* <ValidationCode /> */}
           {/* <ResetPassword /> */}
           {/* <ChangePassword path='/change password' /> */}
-          {/* <SpecialCars /> */}
+          <SpecialCars />
           {/* <OtherCars /> */}
           {/* <DealersCars /> */}
           {/* <CarDetails /> */}
@@ -60,7 +60,7 @@ function App() {
           {/* <ContactUs path='/contact us'/> */}
           {/* <Settings path='/settings' /> */}
 
-          <AddCarDealer exact path='/becomeDealer' />
+          {/* <AddCarDealer exact path='/becomeDealer' /> */}
 
           {/* <Test /> */}
           {/* <MyGallery /> */}

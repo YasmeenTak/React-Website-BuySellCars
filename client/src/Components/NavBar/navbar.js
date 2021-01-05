@@ -38,7 +38,18 @@ export class navbar extends Component {
               <Nav.Link href='#contactus' style={{ color: 'black' }}>
                 تواصل معنا
               </Nav.Link>
-              <Button>أضف معرضك</Button>
+              <Button
+                style={{
+                  background: 'white',
+                  border: '1px solid #ff6c37',
+                  borderRadius: '7px',
+                  color: '#ff6c37',
+                  width: '120px',
+                  fontSize: 'small',
+                }}
+              >
+                + أضف معرضك
+              </Button>
             </Nav>
             <Form inline id='Btns'>
               <Button

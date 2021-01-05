@@ -107,3 +107,13 @@
 .mainNavLogin > li > a:hover {
   color: #ff6c37;
 }
+
+.dropdownNotification > div > div > img {
+  width: 45px;
+  height: 45px;
+}
+
+.dropdownNotification > div > div > p {
+  font-size: x-small;
+  color: #818181;
+}

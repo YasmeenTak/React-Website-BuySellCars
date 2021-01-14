@@ -12,12 +12,12 @@ export class Login extends Component {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6'>
-              <div className='imgDiv'>
+              <div className='imgDiv animate__animated animate__bounceInRight'>
                 <img src='/assets/img/login.png' className='loginImg'></img>
               </div>
             </div>
             <div className='col mt-5'>
-              <div className='formDiv'>
+              <div className='formDiv animate__animated animate__bounceInLeft'>
                 <h5 className='title'>تسجيل الدخول</h5>
                 <p className='subTitle'>
                   قم بإدخال البريد الإلكتروني وكلمة المرور للوصول

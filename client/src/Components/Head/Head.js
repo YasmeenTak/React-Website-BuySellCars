@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './style.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSortAmountDownAlt } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSortAmountDownAlt } from '@fortawesome/free-solid-svg-icons';
 import { InputGroup, Button, FormControl, FormCheck } from 'react-bootstrap';
-import Checkbox from '@material-ui/core/Checkbox';
+// import Checkbox from '@material-ui/core/Checkbox';
 import Radio from '@material-ui/core/Radio';
 // import { Slider } from '@material-ui/core';
 import RangeSlider from '../RangeSlider/RangeSlider';
@@ -21,25 +21,27 @@ export class Head extends Component {
               <img
                 src='assets/img/header1.png'
                 className='img-fluid '
+                alt='head'
                 id='headRight'
               />
               <img
                 src='assets/img/carHead.png'
-                className='img-fluid  '
+                className='img-fluid animate__animated animate__bounce'
+                alt='head'
                 id='carHead'
               />
             </div>
 
-            <div className='col-lg-6 cl-md-6 pr-5' id='rightDiv'>
+            <div className='col-lg-6 cl-md-6 pr-5 ' id='rightDiv'>
               <h5 className='pHead1'>
                 نحن هنا لمساعدتك في اختيار السيارة الأفضل لك
               </h5>
-              <h6 className='pHead2'>
+              <h6 className='pHead2 '>
                 ابحث هنا واحجز سيارتك للشراء وسنقوم بالتواصل معك في أقرب وقت
               </h6>
 
               <InputGroup
-                className='mt-5 mb-5 w-75'
+                className='mt-5 mb-5 w-75 animate__animated animate__pulse'
                 style={{ float: 'right', height: '40px' }}
               >
                 <InputGroup.Prepend>
@@ -82,7 +84,7 @@ export class Head extends Component {
                     <div className='modal-header'>
                       <button
                         type='button'
-                        class='close order-1'
+                        className='close order-1'
                         data-dismiss='modal'
                         aria-label='Close'
                         style={{ textAlign: 'left' }}
@@ -105,8 +107,8 @@ export class Head extends Component {
                       className='container checkBoxes'
                       style={{ width: '70%' }}
                     >
-                      <div class='row'>
-                        <div class='col'>
+                      <div className='row'>
+                        <div className='col'>
                           <p>نوع السيارة</p>
                           <div className='radioInputDiv'>
                             <FormControlLabel
@@ -118,7 +120,7 @@ export class Head extends Component {
                           </div>
                         </div>
 
-                        <div class='col'>
+                        <div className='col'>
                           <p>الزخرفة الخارجية</p>
                           <FormControlLabel
                             value='female'
@@ -127,7 +129,7 @@ export class Head extends Component {
                             className='radioInput'
                           />
                         </div>
-                        <div class='col'>
+                        <div className='col'>
                           <p>الحالة العامة للسيارة</p>
                           <FormControlLabel
                             value='female'
@@ -140,7 +142,7 @@ export class Head extends Component {
                       <div className='divider'></div>
                     </div>
                     {/* -------------------------------------------------------------- */}
-                    <div class='sliderDiv'>
+                    <div className='sliderDiv'>
                       <RangeSlider />
                     </div>
                     {/* <form className='rangeSliderBS'>
@@ -220,15 +222,24 @@ export class Head extends Component {
               {/* <!------------------------------ End Modal ------------------------> */}
 
               <div className='appButton'>
-                <a href='https://play.google.com/store' target='_blank'>
+                <a
+                  href='https://play.google.com/store'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <img
                     src='/assets/img/googlePlay.png'
                     id='appBtn'
+                    alt='#'
                     className='googlePlayImg'
                   />
                 </a>
-                <a href='https://www.apple.com/app-store/' target='_blank'>
-                  <img src='/assets/img/appleStore.png' id='appBtn' />
+                <a
+                  href='https://www.apple.com/app-store/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src='/assets/img/appleStore.png' alt='#' id='appBtn' />
                 </a>
               </div>
             </div>

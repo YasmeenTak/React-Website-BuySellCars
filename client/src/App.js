@@ -41,14 +41,14 @@ function App() {
     <div>
       <Router>
         <div className='App'>
-          {/* <Home path='/home' /> */}
+          <Home path='/home' />
           {/* <Login path='/login' /> */}
-          {/* <Registration path='/register'/> */}
+          {/* <Registration path='/register' /> */}
           {/* <ForgotPassword /> */}
           {/* <ValidationCode /> */}
           {/* <ResetPassword /> */}
           {/* <ChangePassword path='/change password' /> */}
-          <SpecialCars />
+          {/* <SpecialCars /> */}
           {/* <OtherCars /> */}
           {/* <DealersCars /> */}
           {/* <CarDetails /> */}

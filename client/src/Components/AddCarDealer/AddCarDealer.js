@@ -9,14 +9,14 @@ function AddCarDealer() {
 
       <div className='container mainDiv'>
         <div className='row'>
-          <div className='col-lg-6  addDealerImgDiv'>
+          <div className='col-lg-6  addDealerImgDiv animate__animated animate__bounceInRight '>
             <img
               src='/assets/img/cardealer.jpg'
               className='img-fluid'
               alt='Add dealer'
             />
           </div>
-          <div className='col mt-5 formDiv'>
+          <div className='col mt-5 formDiv animate__animated animate__bounceInLeft'>
             <Form>
               <h5 className='titleReg'>أضف معرضك </h5>
               <Form.Row>
@@ -78,6 +78,7 @@ function AddCarDealer() {
             >
               انضم الآن
             </Button>
+
             {/* -----------------------------Modal---------------------------------------- */}
             <div
               class='modal fade'
@@ -93,7 +94,7 @@ function AddCarDealer() {
                     <img
                       src='assets/img/success2.jpg'
                       alt='succsses'
-                      className='successImg img-responsive animate__bounceIn'
+                      className='successImg img-responsive animate__backOutDown'
                     />
                   </div>
                   <div

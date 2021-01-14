@@ -71,14 +71,14 @@ export class NavbarlogIn extends Component {
                   style={{ textAlign: 'right' }}
                 >
                   <div className='row'>
-                    <div className='col-lg-2'>
+                    {/* <div className='col-lg-2'>
                       <img
                         src='./assets/img/buyNot.jpg'
                         alt='buy'
                         className='img-responsive'
                       />
-                    </div>
-                    <div className='col-lg-10'>
+                    </div> */}
+                    <div className='c'>
                       <button
                         className='dropdown-item'
                         type='button'
@@ -90,6 +90,7 @@ export class NavbarlogIn extends Component {
                       <p>قبل 5 أيام</p>
                     </div>
                   </div>
+                  <div className='divider'></div>
 
                   {/* ----------------------------------------------------------------- */}
 
@@ -101,21 +102,32 @@ export class NavbarlogIn extends Component {
                   >
                     قام عبدالله فوزي بحجز موعد لشراء السيارة
                   </button>
+                  <p>قبل 20 دقيقة</p>
+
+                  <div className='divider'></div>
+
                   {/* ----------------------------------------------------------------- */}
 
                   <button className='dropdown-item' type='button'>
                     تم عرض سيارة جديدة للبيع من نوع نيسان
                   </button>
+                  <p>قبل 10 دقائق</p>
+                  <div className='divider'></div>
+
                   {/* ----------------------------------------------------------------- */}
 
                   <button className='dropdown-item' type='button'>
                     تم نشر عرض جديد من قبل معرض فورد
                   </button>
+                  <p>قبل يومين</p>
+                  <div className='divider'></div>
+
                   {/* ----------------------------------------------------------------- */}
 
                   <button className='dropdown-item' type='button'>
                     تم عرض سيارة جديدة للبيع من نوع ميرسيدس
                   </button>
+                  <p>قبل 3 أيام</p>
                 </div>
               </li>
               {/* ------------------------------Modal 1--------------------------------------- */}

@@ -117,3 +117,12 @@
   font-size: x-small;
   color: #818181;
 }
+
+.dropdownNotification > div > div > button {
+  font-size: small;
+}
+
+.dropdownNotification > p {
+  font-size: x-small;
+  color: #818181;
+}

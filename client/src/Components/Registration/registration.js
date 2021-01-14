@@ -9,10 +9,13 @@ export class Registration extends Component {
     return (
       <div className='container mainDiv'>
         <div className='row'>
-          <div className='col-lg-6  regImgDiv '>
-            <img src='/assets/img/register.png' className='img-fluid' />
+          <div className='col-lg-6 regImgDiv animate__animated animate__bounceInRight'>
+            <img
+              src='/assets/img/register.png'
+              className='img-fluid animate__backInRight'
+            />
           </div>
-          <div className='col mt-5 formDiv'>
+          <div className='col mt-5 formDiv animate__animated animate__bounceInLeft'>
             <Form>
               <h5 className='titleReg'>إنشاء حساب جديد</h5>
               <Form.Row>

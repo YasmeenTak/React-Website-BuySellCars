@@ -71,7 +71,6 @@ var settings = {
 };
 
 export class home extends Component {
-
   render() {
     return (
       <div>
@@ -85,7 +84,9 @@ export class home extends Component {
             <div className='titlesSliderDiv'>
               <div className='roaw'>
                 {/* <p className='col-sm-6'style={{border:'1px solid black'}}>عرض الكل</p> */}
-                <h5 className=' titleSlider '>السيارات المميزة</h5>
+                <h5 className=' titleSlider animate__animated animate__pulse'>
+                  السيارات المميزة
+                </h5>
               </div>
               <h6 className='subTitleSlider'>
                 السيارات المميزة ذات المواصفات العالية السيارات المميزة ذات
@@ -160,7 +161,9 @@ export class home extends Component {
         <div>
           <form id='formSlider'>
             <div className='titlesSliderDiv'>
-              <h5 className='titleSlider'>السيارات الأخيرة</h5>
+              <h5 className='titleSlider animate__animated animate__pulse'>
+                السيارات الأخيرة
+              </h5>
               <h6 className='subTitleSlider'>
                 السيارات ذات المواصفات المتفاوتة والتي يمكن الوصول إليه في أي
                 وقت
@@ -234,7 +237,9 @@ export class home extends Component {
         <div>
           <form id='formSlider'>
             <div className='titlesSliderDiv'>
-              <h5 className='titleSlider'>المتعاقدون</h5>
+              <h5 className='titleSlider animate__animated animate__pulse'>
+                المتعاقدون
+              </h5>
               <h6 className='subTitleSlider'>
                 السيارات التابعة لمعارض متنوعة ومختلفة وبعدة مواصفات
               </h6>

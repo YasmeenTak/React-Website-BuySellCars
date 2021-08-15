@@ -94,7 +94,7 @@ function AddCarDealer() {
                     <img
                       src='assets/img/success2.jpg'
                       alt='succsses'
-                      className='successImg img-responsive animate__backOutDown'
+                      className='successImg img-responsive animate__animated animate__backOutDown'
                     />
                   </div>
                   <div

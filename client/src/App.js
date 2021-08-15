@@ -42,17 +42,17 @@ function App() {
       <Router>
         <div className='App'>
           <Home path='/home' />
-          {/* <Login path='/login' /> */}
-          {/* <Registration path='/register' /> */}
-          {/* <ForgotPassword /> */}
-          {/* <ValidationCode /> */}
-          {/* <ResetPassword /> */}
-          {/* <ChangePassword path='/change password' /> */}
-          {/* <SpecialCars /> */}
-          {/* <OtherCars /> */}
-          {/* <DealersCars /> */}
-          {/* <CarDetails /> */}
-          {/* <AddAds path='/addAds'/> */}
+          <Login path='/login' />
+          <Registration path='/register' />
+          <ForgotPassword />
+          <ValidationCode />
+          <ResetPassword />
+          <ChangePassword path='/change password' />
+          <SpecialCars />
+          <OtherCars />
+          <DealersCars />
+          <CarDetails />
+          <AddAds path='/addAds'/>
           {/* <MyPurchases /> */}
           {/* <MySales /> */}
           {/* <UserProfile /> */}
